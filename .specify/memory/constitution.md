@@ -1,11 +1,11 @@
 <!--
 SYNC IMPACT REPORT
 ==================
-Version change: 1.0.0 → 1.1.0 (MINOR: new sections added)
+Version change: 1.1.0 → 1.1.1 (PATCH: submodule update requirement added)
 Modified principles: None
-Added sections:
-  - Branch & PR Workflow (expanded Development Workflow)
-  - Documentation Standards (new section with MkDocs requirements)
+Modified sections:
+  - Branch & PR Workflow: Added step 0 for submodule update requirement
+Added sections: None
 Removed sections: None
 Templates checked:
   - .specify/templates/plan-template.md ✅ (Constitution Check section present)
@@ -126,6 +126,12 @@ Automation ensures consistency and enables integration with CI/CD pipelines.
 
 Every feature or change MUST follow this workflow:
 
+0. **Update submodules** before starting any work (NON-NEGOTIABLE)
+   - Run `git submodule update --remote --merge` to fetch latest changes
+   - Verify all submodules are on their expected branches (typically `main`)
+   - This ensures comparisons are based on the latest agent implementations
+   - Submodule updates MUST be committed if changes are pulled
+
 1. **Create feature branch** before any code changes
    - Branch naming: `feature/<description>` or `fix/<description>`
    - Branch MUST be created from `main` (or designated development branch)
@@ -238,4 +244,4 @@ with the principles defined above.
 - Violations MUST be flagged and resolved before merge
 - Exceptions require documented justification and maintainer approval
 
-**Version**: 1.1.0 | **Ratified**: 2025-12-25 | **Last Amended**: 2025-12-25
+**Version**: 1.1.1 | **Ratified**: 2025-12-25 | **Last Amended**: 2025-12-25
