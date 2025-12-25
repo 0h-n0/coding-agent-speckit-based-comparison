@@ -1,0 +1,64 @@
+site_name: Coding Agent Comparison
+site_url: https://0h-n0.github.io/coding-agent-speckit-based-comparison/
+site_description: Documentation for comparing coding agents
+repo_url: https://github.com/0h-n0/coding-agent-speckit-based-comparison
+repo_name: coding-agent-speckit-based-comparison
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - admonition
+  - tables
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Configuration: getting-started/configuration.md
+    - Quickstart: getting-started/quickstart.md
+  - Features: features/index.md
+  - Agents:
+    - Overview: agents/index.md
+    - Codex: agents/codex/index.md
+    - Gemini: agents/gemini/index.md
+    - Claude: agents/claude/index.md
+  - Methodology:
+    - Evaluation Criteria: methodology/evaluation-criteria.md
+    - Metrics: methodology/metrics.md
+    - Benchmarks: methodology/benchmarks.md
+  - Development:
+    - Contributing: development/contributing.md
+    - Architecture: development/architecture.md
+    - Changelog: development/changelog.md
+  - Reference:
+    - CLI: reference/cli.md
+    - API: reference/api.md
+    - Glossary: reference/glossary.md
