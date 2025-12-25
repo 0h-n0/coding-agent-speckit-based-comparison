@@ -1,0 +1,9 @@
+[submodule "submodules/codex"]
+	path = submodules/codex
+	url = git@github.com:0h-n0/local-voice-assistant-codex.git
+[submodule "submodules/gemini"]
+	path = submodules/gemini
+	url = git@github.com:0h-n0/local-voice-assistant-gemini.git
+[submodule "submodules/claude"]
+	path = submodules/claude
+	url = git@github.com:0h-n0/local-voice-assistant-claude.git
