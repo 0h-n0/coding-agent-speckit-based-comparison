@@ -50,17 +50,21 @@ nav:
     - Codex:
       - Overview: agents/codex/index.md
       - Constitution: agents/codex/constitution.md
+      - STT Analysis: agents/codex/stt-analysis.md
     - Gemini:
       - Overview: agents/gemini/index.md
       - Constitution: agents/gemini/constitution.md
+      - STT Analysis: agents/gemini/stt-analysis.md
     - Claude:
       - Overview: agents/claude/index.md
       - Constitution: agents/claude/constitution.md
+      - STT Analysis: agents/claude/stt-analysis.md
   - Methodology:
     - Evaluation Criteria: methodology/evaluation-criteria.md
     - Metrics: methodology/metrics.md
     - Benchmarks: methodology/benchmarks.md
     - Constitution Comparison: methodology/constitution-comparison.md
+    - STT Comparison: methodology/stt-comparison.md
   - Development:
     - Contributing: development/contributing.md
     - Architecture: development/architecture.md
