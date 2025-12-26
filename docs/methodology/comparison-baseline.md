@@ -6,17 +6,36 @@
 
 各エージェントの利用環境とプランは以下の通りです。
 
-| Agent | Plan | Model | Release Date | Notes |
-|-------|------|-------|--------------|-------|
-| Codex | Plus プラン | gpt-5.2-codex | 2025-12-18 | OpenAI Codex CLI |
-| Gemini | 無料枠 (Preview) | Gemini 3 Flash | 2025-12-17 | Auto モデル選択 |
-| Claude Code | MAX $100 プラン | Opus 4.5 | 2025-11-24 | Claude Code CLI |
+| Agent | Plan | Model | Release Date | CLI Version | Notes |
+|-------|------|-------|--------------|-------------|-------|
+| Codex | Plus プラン | gpt-5.2-codex | 2025-12-18 | 0.77.0 | OpenAI Codex CLI |
+| Gemini | 無料枠 (Preview) | Gemini 3 Flash | 2025-12-17 | 0.22.2 | Auto モデル選択 |
+| Claude Code | MAX $100 プラン | Opus 4.5 | 2025-11-24 | 2.0.76 | Claude Code CLI |
+
+### CLI Installation
+
+```bash
+# Codex CLI
+npm i -g @openai/codex
+
+# Gemini CLI
+npm i -g @google/gemini-cli
+
+# Claude Code
+npm i -g @anthropic-ai/claude-code
+```
 
 ### Model References
 
 - [Introducing GPT-5.2-Codex | OpenAI](https://openai.com/index/introducing-gpt-5-2-codex/)
 - [Introducing Gemini 3 Flash | Google](https://blog.google/products/gemini/gemini-3-flash/)
 - [Introducing Claude Opus 4.5 | Anthropic](https://www.anthropic.com/news/claude-opus-4-5)
+
+### CLI References
+
+- [@openai/codex - npm](https://www.npmjs.com/package/@openai/codex)
+- [@google/gemini-cli - npm](https://www.npmjs.com/package/@google/gemini-cli)
+- [@anthropic-ai/claude-code - npm](https://www.npmjs.com/package/@anthropic-ai/claude-code)
 
 ## Common Workflow
 
