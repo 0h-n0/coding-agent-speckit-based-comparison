@@ -6,11 +6,17 @@
 
 各エージェントの利用環境とプランは以下の通りです。
 
-| Agent | Plan | Model | Notes |
-|-------|------|-------|-------|
-| Codex | Plus プラン | gpt-5.2-codex | OpenAI Codex CLI |
-| Gemini | 無料枠 (Preview) | Gemini 3 Flash | Auto モデル選択 |
-| Claude Code | MAX $100 プラン | Opus | Claude Code CLI |
+| Agent | Plan | Model | Release Date | Notes |
+|-------|------|-------|--------------|-------|
+| Codex | Plus プラン | gpt-5.2-codex | 2025-12-18 | OpenAI Codex CLI |
+| Gemini | 無料枠 (Preview) | Gemini 3 Flash | 2025-12-17 | Auto モデル選択 |
+| Claude Code | MAX $100 プラン | Opus 4.5 | 2025-11-24 | Claude Code CLI |
+
+### Model References
+
+- [Introducing GPT-5.2-Codex | OpenAI](https://openai.com/index/introducing-gpt-5-2-codex/)
+- [Introducing Gemini 3 Flash | Google](https://blog.google/products/gemini/gemini-3-flash/)
+- [Introducing Claude Opus 4.5 | Anthropic](https://www.anthropic.com/news/claude-opus-4-5)
 
 ## Common Workflow
 
