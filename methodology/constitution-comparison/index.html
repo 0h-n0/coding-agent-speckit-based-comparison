@@ -1,0 +1,2963 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for comparing coding agents">
+      
+      
+      
+        <link rel="canonical" href="https://0h-n0.github.io/coding-agent-speckit-based-comparison/methodology/constitution-comparison/">
+      
+      
+        <link rel="prev" href="../benchmarks/">
+      
+      
+        <link rel="next" href="../../development/contributing/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Constitution Comparison - Coding Agent Comparison</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="Coding Agent Comparison" class="md-header__button md-logo" aria-label="Coding Agent Comparison" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Coding Agent Comparison
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Constitution Comparison
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/0h-n0/coding-agent-speckit-based-comparison" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    coding-agent-speckit-based-comparison
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/installation/" class="md-tabs__link">
+          
+  
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../features/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Features
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../agents/" class="md-tabs__link">
+          
+  
+  
+  Agents
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../evaluation-criteria/" class="md-tabs__link">
+          
+  
+  
+  Methodology
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../development/contributing/" class="md-tabs__link">
+          
+  
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/cli/" class="md-tabs__link">
+          
+  
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Coding Agent Comparison" class="md-nav__button md-logo" aria-label="Coding Agent Comparison" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Coding Agent Comparison
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/0h-n0/coding-agent-speckit-based-comparison" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    coding-agent-speckit-based-comparison
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quickstart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Agents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Codex
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Codex
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agents/codex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agents/codex/constitution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constitution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Gemini
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agents/gemini/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agents/gemini/constitution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constitution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Claude
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agents/claude/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agents/claude/constitution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constitution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evaluation-criteria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluation Criteria
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../benchmarks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constitution Comparison
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constitution Comparison
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        比較ベースライン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本原則比較
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="基本原則比較">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主な発見
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        総合評価サマリー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        技術スタック比較
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="技術スタック比較">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主な発見
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        開発ワークフロー比較
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="開発ワークフロー比較">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主な発見
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        品質基準比較
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="品質基準比較">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主な発見
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ガバナンス比較
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ガバナンス比較">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主な発見
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ソフトウェア開発完全性評価
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スコアリング方法論
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="スコアリング方法論">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        評価アプローチ
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        詳細評価と根拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="詳細評価と根拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Codex の評価
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gemini" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gemini の評価
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claude の評価
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相対ランキングと正当化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="相対ランキングと正当化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        総合ランキング
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ランキング正当化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エージェント別詳細
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        比較ベースライン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本原則比較
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="基本原則比較">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主な発見
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        総合評価サマリー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        技術スタック比較
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="技術スタック比較">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主な発見
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        開発ワークフロー比較
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="開発ワークフロー比較">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主な発見
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        品質基準比較
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="品質基準比較">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主な発見
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ガバナンス比較
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ガバナンス比較">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主な発見
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ソフトウェア開発完全性評価
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スコアリング方法論
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="スコアリング方法論">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        評価アプローチ
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        詳細評価と根拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="詳細評価と根拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Codex の評価
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gemini" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gemini の評価
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claude の評価
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相対ランキングと正当化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="相対ランキングと正当化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        総合ランキング
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ランキング正当化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エージェント別詳細
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">憲法比較分析</h1>
+<p>3つのコーディングエージェント（Codex, Gemini, Claude）の憲法を比較分析します。</p>
+<div class="admonition info">
+<p class="admonition-title">言語について / Language Note</p>
+<p>このドキュメントは日本語で記載されています。技術用語は英語のまま使用しています。</p>
+<p>This document is written in Japanese. Technical terms are kept in English for clarity.</p>
+</div>
+<h2 id="_2">比較ベースライン</h2>
+<p>この比較は以下のコミット時点の憲法に基づいています。</p>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Version</th>
+<th>Repository</th>
+<th>Commit</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Codex</td>
+<td>1.1.0</td>
+<td><a href="https://github.com/0h-n0/local-voice-assistant-codex">local-voice-assistant-codex</a></td>
+<td><a href="https://github.com/0h-n0/local-voice-assistant-codex/commit/5c2031e347e42f8eefde569db2d1ad513c0a5564">5c2031e</a></td>
+<td>2025-12-25</td>
+</tr>
+<tr>
+<td>Gemini</td>
+<td>1.2.0</td>
+<td><a href="https://github.com/0h-n0/local-voice-assistant-gemini">local-voice-assistant-gemini</a></td>
+<td><a href="https://github.com/0h-n0/local-voice-assistant-gemini/commit/5f9064f672641534adee80dd9fcb3a60c9b48527">5f9064f</a></td>
+<td>2025-12-25</td>
+</tr>
+<tr>
+<td>Claude</td>
+<td>1.1.0</td>
+<td><a href="https://github.com/0h-n0/local-voice-assistant-claude">local-voice-assistant-claude</a></td>
+<td><a href="https://github.com/0h-n0/local-voice-assistant-claude/commit/7a68ec67e66b30620dfcbe462698f8b311dabc8b">7a68ec6</a></td>
+<td>2025-12-25</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">基本原則比較</h2>
+<p>各エージェントの憲法で定義されている基本原則を比較します。</p>
+<table>
+<thead>
+<tr>
+<th>原則</th>
+<th>Codex</th>
+<th>Gemini</th>
+<th>Claude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プライバシー/セキュリティ</td>
+<td>✅ Principle I (Local-First Privacy)</td>
+<td>⚠️ Security section (簡潔)</td>
+<td>✅ Principle I (Privacy-First, NON-NEGOTIABLE)</td>
+</tr>
+<tr>
+<td>パフォーマンス</td>
+<td>❌ 未指定</td>
+<td>❌ 未指定</td>
+<td>✅ Principle II (Performance-Conscious: &lt;500ms)</td>
+</tr>
+<tr>
+<td>シンプリシティ/YAGNI</td>
+<td>❌ 未指定</td>
+<td>✅ Principle VII (Simplicity/YAGNI)</td>
+<td>✅ Principle III (Simplicity-First)</td>
+</tr>
+<tr>
+<td>テスト駆動開発</td>
+<td>✅ Principle III (Reliability)</td>
+<td>✅ Principle III (Test-First)</td>
+<td>✅ Principle IV (TDD, NON-NEGOTIABLE)</td>
+</tr>
+<tr>
+<td>モジュラリティ</td>
+<td>❌ 未指定</td>
+<td>✅ Principle I (Library-First)</td>
+<td>✅ Principle V (Modular Architecture)</td>
+</tr>
+<tr>
+<td>オブザーバビリティ</td>
+<td>✅ Principle IV</td>
+<td>✅ Principle V</td>
+<td>✅ Principle VI</td>
+</tr>
+<tr>
+<td>セマンティックバージョニング</td>
+<td>✅ Principle V</td>
+<td>✅ Principle VI</td>
+<td>⚠️ Amendment process で暗示</td>
+</tr>
+<tr>
+<td>スクリプタブルインターフェース</td>
+<td>✅ Principle II</td>
+<td>✅ Principle II (CLI Interface)</td>
+<td>❌ 未指定</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">主な発見</h3>
+<ul>
+<li><strong>Claude</strong>: 最も詳細な原則を持ち、明示的な NON-NEGOTIABLE マーカーを使用</li>
+<li><strong>Gemini</strong>: ユニークな Library-First アプローチを採用</li>
+<li><strong>Codex</strong>: Local-First Privacy と Scriptable Interfaces を重視</li>
+<li><strong>Claude</strong>: 具体的なパフォーマンス目標（&lt;500ms レイテンシ）を含む</li>
+</ul>
+<h2 id="_5">総合評価サマリー</h2>
+<table>
+<thead>
+<tr>
+<th>カテゴリ</th>
+<th>Codex</th>
+<th>Gemini</th>
+<th>Claude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本原則</td>
+<td>良</td>
+<td>良</td>
+<td>優</td>
+</tr>
+<tr>
+<td>技術スタック</td>
+<td>良</td>
+<td>良</td>
+<td>優</td>
+</tr>
+<tr>
+<td>開発ワークフロー</td>
+<td>可</td>
+<td>良</td>
+<td>優</td>
+</tr>
+<tr>
+<td>品質基準</td>
+<td>可</td>
+<td>良</td>
+<td>優</td>
+</tr>
+<tr>
+<td>ガバナンス</td>
+<td>良</td>
+<td>可</td>
+<td>優</td>
+</tr>
+<tr>
+<td><strong>総合</strong></td>
+<td><strong>良</strong></td>
+<td><strong>良</strong></td>
+<td><strong>優</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">評価基準</p>
+<ul>
+<li><strong>優 (Excellent)</strong>: 要素が包括的な詳細、理由、例とともに存在</li>
+<li><strong>良 (Good)</strong>: 要素が適切な詳細とともに存在</li>
+<li><strong>可 (Acceptable)</strong>: 要素は言及されているが詳細が不足</li>
+<li><strong>不足 (Insufficient)</strong>: 要素が欠落または重大な不完全性</li>
+</ul>
+</div>
+<h2 id="_6">技術スタック比較</h2>
+<p>各エージェントの憲法で指定されている技術スタックを比較します。</p>
+<table>
+<thead>
+<tr>
+<th>要素</th>
+<th>Codex</th>
+<th>Gemini</th>
+<th>Claude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>フロントエンドフレームワーク</td>
+<td>✅ React/Next + TypeScript</td>
+<td>✅ Next.js + React + TypeScript</td>
+<td>✅ Next.js + React + TypeScript</td>
+</tr>
+<tr>
+<td>バックエンドフレームワーク</td>
+<td>✅ FastAPI</td>
+<td>✅ FastAPI</td>
+<td>✅ FastAPI</td>
+</tr>
+<tr>
+<td>パッケージマネージャー</td>
+<td>✅ uv</td>
+<td>✅ uv</td>
+<td>✅ uv</td>
+</tr>
+<tr>
+<td>型バリデーション</td>
+<td>✅ Pydantic</td>
+<td>✅ Pydantic</td>
+<td>✅ Pydantic v2</td>
+</tr>
+<tr>
+<td>Linting</td>
+<td>✅ Ruff</td>
+<td>✅ Ruff</td>
+<td>✅ Ruff</td>
+</tr>
+<tr>
+<td>型チェック</td>
+<td>❌ 未指定</td>
+<td>❌ 未指定</td>
+<td>✅ mypy (strict)</td>
+</tr>
+<tr>
+<td>テストフレームワーク</td>
+<td>❌ 未指定</td>
+<td>❌ 未指定</td>
+<td>✅ pytest, Jest + RTL</td>
+</tr>
+<tr>
+<td>プロジェクト構造</td>
+<td>❌ 未記載</td>
+<td>❌ 未記載</td>
+<td>✅ 詳細なディレクトリツリー</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">主な発見</h3>
+<ul>
+<li>3つのエージェントすべてが同じコアスタックを指定（React/Next, FastAPI, uv, Pydantic, Ruff）</li>
+<li>Claude が最も包括的なスタック仕様を提供（mypy strict モードを含む）</li>
+<li>Claude は詳細なプロジェクト構造テンプレートを含む</li>
+<li>Codex と Gemini はテストフレームワークの仕様が欠落</li>
+</ul>
+<h2 id="_8">開発ワークフロー比較</h2>
+<p>各エージェントの開発ワークフロー規定を比較します。</p>
+<table>
+<thead>
+<tr>
+<th>要素</th>
+<th>Codex</th>
+<th>Gemini</th>
+<th>Claude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ブランチ戦略</td>
+<td>✅ フィーチャーブランチ必須</td>
+<td>✅ ブランチ作成必須</td>
+<td>✅ フィーチャーブランチ (NON-NEGOTIABLE)</td>
+</tr>
+<tr>
+<td>PR 要件</td>
+<td>✅ 必須</td>
+<td>✅ レビュー付き必須</td>
+<td>✅ コンプライアンスチェックリスト付き必須</td>
+</tr>
+<tr>
+<td>コードレビュー</td>
+<td>⚠️ 言及あり（詳細なし）</td>
+<td>✅ 必須（1+ 承認者）</td>
+<td>✅ 詳細な要件あり</td>
+</tr>
+<tr>
+<td>README 更新</td>
+<td>✅ 必須</td>
+<td>✅ 必須</td>
+<td>✅ 必須</td>
+</tr>
+<tr>
+<td>コミットフォーマット</td>
+<td>❌ 未指定</td>
+<td>❌ 未指定</td>
+<td>✅ Conventional commits</td>
+</tr>
+<tr>
+<td>マージ戦略</td>
+<td>❌ 未指定</td>
+<td>❌ 未指定</td>
+<td>✅ Squash merge 推奨</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_9">主な発見</h3>
+<ul>
+<li>Claude が最も詳細なワークフローを持ち、明示的な NON-NEGOTIABLE 指定あり</li>
+<li>全エージェントがフィーチャーブランチと PR ワークフローを必須</li>
+<li>Claude がコミットメッセージフォーマットとマージ戦略を指定</li>
+<li>Codex と Gemini はコミットフォーマットのガイダンスが欠落</li>
+</ul>
+<h2 id="_10">品質基準比較</h2>
+<p>各エージェントの品質基準を比較します。</p>
+<table>
+<thead>
+<tr>
+<th>要素</th>
+<th>Codex</th>
+<th>Gemini</th>
+<th>Claude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>テスト要件</td>
+<td>✅ 重要パスの自動テスト</td>
+<td>✅ TDD 必須</td>
+<td>✅ TDD (NON-NEGOTIABLE), 3種類のテスト</td>
+</tr>
+<tr>
+<td>Linting ルール</td>
+<td>✅ Ruff 強制</td>
+<td>✅ Ruff 必須</td>
+<td>✅ Ruff 警告ゼロ</td>
+</tr>
+<tr>
+<td>型チェック</td>
+<td>❌ 未指定</td>
+<td>✅ Pydantic（ランタイム）</td>
+<td>✅ mypy strict + Pydantic</td>
+</tr>
+<tr>
+<td>カバレッジ要件</td>
+<td>❌ 未指定</td>
+<td>❌ 未指定</td>
+<td>✅ カバレッジ低下不可</td>
+</tr>
+<tr>
+<td>フロントエンド品質</td>
+<td>❌ 未指定</td>
+<td>❌ 未指定</td>
+<td>✅ ESLint, Prettier, tsc</td>
+</tr>
+<tr>
+<td>統合テスト</td>
+<td>⚠️ 言及あり</td>
+<td>✅ Principle IV</td>
+<td>✅ 必須</td>
+</tr>
+<tr>
+<td>コントラクトテスト</td>
+<td>❌ 未指定</td>
+<td>❌ 未指定</td>
+<td>✅ 必須</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_11">主な発見</h3>
+<ul>
+<li>Claude が最も包括的な品質基準を提供</li>
+<li>Claude は3種類のテスト（unit, integration, contract）を指定</li>
+<li>Claude はフロントエンド固有の品質要件を含む</li>
+<li>Codex と Gemini はフロントエンド品質仕様が欠落</li>
+</ul>
+<h2 id="_12">ガバナンス比較</h2>
+<p>各エージェントのガバナンス構造を比較します。</p>
+<table>
+<thead>
+<tr>
+<th>要素</th>
+<th>Codex</th>
+<th>Gemini</th>
+<th>Claude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>修正プロセス</td>
+<td>✅ 書面による提案必須</td>
+<td>✅ PR ベースの修正</td>
+<td>✅ 詳細な5ステッププロセス</td>
+</tr>
+<tr>
+<td>バージョニングポリシー</td>
+<td>✅ MAJOR/MINOR/PATCH 定義</td>
+<td>❌ 未指定</td>
+<td>✅ MAJOR/MINOR/PATCH 定義</td>
+</tr>
+<tr>
+<td>コンプライアンスレビュー</td>
+<td>✅ spec/plan に必須</td>
+<td>⚠️ ガバナンスで暗示</td>
+<td>✅ 全 PR に必須</td>
+</tr>
+<tr>
+<td>例外処理</td>
+<td>✅ 例外の文書化</td>
+<td>✅ 明示的な正当化</td>
+<td>✅ Complexity Tracking セクション</td>
+</tr>
+<tr>
+<td>テンプレート同期</td>
+<td>✅ 影響レポートヘッダー</td>
+<td>❌ 未指定</td>
+<td>✅ SYNC IMPACT REPORT</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_13">主な発見</h3>
+<ul>
+<li>Codex と Claude は類似したガバナンス構造を持つ</li>
+<li>Claude が最も詳細な修正プロセスを持つ</li>
+<li>Gemini は明示的なバージョニングポリシーが欠落</li>
+<li>Codex と Claude は SYNC IMPACT REPORT ヘッダーを使用</li>
+</ul>
+<h2 id="_14">ソフトウェア開発完全性評価</h2>
+<p>ソフトウェア開発に必要な要素のカバレッジを評価します。</p>
+<table>
+<thead>
+<tr>
+<th>要件</th>
+<th>Codex</th>
+<th>Gemini</th>
+<th>Claude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>技術スタック</strong></td>
+<td>✅ 完全</td>
+<td>✅ 完全</td>
+<td>✅ 完全</td>
+</tr>
+<tr>
+<td><strong>テスト要件</strong></td>
+<td>⚠️ 部分的</td>
+<td>✅ 完全</td>
+<td>✅ 完全</td>
+</tr>
+<tr>
+<td><strong>コードスタイル</strong></td>
+<td>✅ 完全</td>
+<td>✅ 完全</td>
+<td>✅ 完全</td>
+</tr>
+<tr>
+<td><strong>ワークフロー</strong></td>
+<td>⚠️ 部分的</td>
+<td>⚠️ 部分的</td>
+<td>✅ 完全</td>
+</tr>
+<tr>
+<td><strong>プロジェクト構造</strong></td>
+<td>❌ 欠落</td>
+<td>❌ 欠落</td>
+<td>✅ 完全</td>
+</tr>
+<tr>
+<td><strong>品質ゲート</strong></td>
+<td>⚠️ 部分的</td>
+<td>⚠️ 部分的</td>
+<td>✅ 完全</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition success">
+<p class="admonition-title">結論</p>
+<ul>
+<li><strong>ソフトウェア開発完全性</strong>: Claude が最も包括的なガイダンスを提供</li>
+<li><strong>プライバシー重視プロジェクト</strong>: Codex が最も強力なプライバシーファーストアプローチ</li>
+<li><strong>モジュラーライブラリ開発</strong>: Gemini の Library-First 原則が適合</li>
+<li><strong>共通点</strong>: 3つすべてが React/Next + FastAPI + uv + Pydantic + Ruff スタックを共有</li>
+</ul>
+</div>
+<h2 id="_15">スコアリング方法論</h2>
+<h3 id="_16">評価アプローチ</h3>
+<p>このセクションでは、各エージェントの憲法を相対評価するためのスコアリング方法論を説明します。</p>
+<p><strong>採用した方法</strong>: 客観的基準によるスコアリング</p>
+<table>
+<thead>
+<tr>
+<th>スコア</th>
+<th>日本語</th>
+<th>基準</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>優 (Excellent)</td>
+<td>ゆう</td>
+<td>要素が包括的な詳細、理由、例とともに存在</td>
+</tr>
+<tr>
+<td>良 (Good)</td>
+<td>りょう</td>
+<td>要素が適切な詳細とともに存在</td>
+</tr>
+<tr>
+<td>可 (Acceptable)</td>
+<td>か</td>
+<td>要素は言及されているが詳細が不足</td>
+</tr>
+<tr>
+<td>不足 (Insufficient)</td>
+<td>ふそく</td>
+<td>要素が欠落または重大な不完全性</td>
+</tr>
+</tbody>
+</table>
+<p><strong>検討した代替案</strong>:</p>
+<ol>
+<li>主観的品質評価 - 却下: 再現性がなく、バイアスの指摘を受けやすい</li>
+<li>重み付けルーブリックスコアリング - 却下: ドキュメント比較に対して複雑さが過剰</li>
+</ol>
+<h2 id="_17">詳細評価と根拠</h2>
+<h3 id="codex">Codex の評価</h3>
+<table>
+<thead>
+<tr>
+<th>カテゴリ</th>
+<th>評価</th>
+<th>根拠</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本原則</td>
+<td>良</td>
+<td>Privacy, Scriptable Interfaces, Observability を明確に定義。ただし Modularity, Simplicity が欠落</td>
+</tr>
+<tr>
+<td>技術スタック</td>
+<td>良</td>
+<td>コアスタックを指定。mypy, テストフレームワークが未指定</td>
+</tr>
+<tr>
+<td>開発ワークフロー</td>
+<td>可</td>
+<td>ブランチ・PR は必須だが、コミットフォーマット・マージ戦略が未指定</td>
+</tr>
+<tr>
+<td>品質基準</td>
+<td>可</td>
+<td>基本的なテスト・Linting はあるが、カバレッジ・フロントエンド品質が欠落</td>
+</tr>
+<tr>
+<td>ガバナンス</td>
+<td>良</td>
+<td>修正プロセス・バージョニング・テンプレート同期を定義</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>「Local-First Privacy」は Codex のユニークな強みであり、プライバシー重視プロジェクトに最適です。</p>
+</blockquote>
+<h3 id="gemini">Gemini の評価</h3>
+<table>
+<thead>
+<tr>
+<th>カテゴリ</th>
+<th>評価</th>
+<th>根拠</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本原則</td>
+<td>良</td>
+<td>Library-First, Simplicity/YAGNI, Integration Testing を明確に定義</td>
+</tr>
+<tr>
+<td>技術スタック</td>
+<td>良</td>
+<td>コアスタックを指定。mypy, テストフレームワークが未指定</td>
+</tr>
+<tr>
+<td>開発ワークフロー</td>
+<td>良</td>
+<td>ブランチ・PR・レビュー要件を定義。コミットフォーマットが未指定</td>
+</tr>
+<tr>
+<td>品質基準</td>
+<td>良</td>
+<td>TDD 必須、統合テスト重視。フロントエンド品質が欠落</td>
+</tr>
+<tr>
+<td>ガバナンス</td>
+<td>可</td>
+<td>PR ベース修正はあるが、バージョニングポリシーが欠落</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>「Library-First」アプローチはモジュラー設計を促進し、再利用性の高いコードベースに貢献します。</p>
+</blockquote>
+<h3 id="claude">Claude の評価</h3>
+<table>
+<thead>
+<tr>
+<th>カテゴリ</th>
+<th>評価</th>
+<th>根拠</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本原則</td>
+<td>優</td>
+<td>全原則を詳細に定義、NON-NEGOTIABLE マーカー使用、具体的パフォーマンス目標 (&lt;500ms)</td>
+</tr>
+<tr>
+<td>技術スタック</td>
+<td>優</td>
+<td>完全なスタック指定 (mypy strict, pytest, Jest + RTL)、詳細なプロジェクト構造</td>
+</tr>
+<tr>
+<td>開発ワークフロー</td>
+<td>優</td>
+<td>Conventional commits, Squash merge, コンプライアンスチェックリスト付き PR</td>
+</tr>
+<tr>
+<td>品質基準</td>
+<td>優</td>
+<td>3種類のテスト (unit, integration, contract)、フロントエンド品質要件 (ESLint, Prettier, tsc)</td>
+</tr>
+<tr>
+<td>ガバナンス</td>
+<td>優</td>
+<td>詳細な5ステップ修正プロセス、コンプライアンスレビュー必須</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>NON-NEGOTIABLE マーカーにより、妥協できない要件が明確に区別されています。</p>
+</blockquote>
+<h2 id="_18">相対ランキングと正当化</h2>
+<h3 id="_19">総合ランキング</h3>
+<table>
+<thead>
+<tr>
+<th>順位</th>
+<th>エージェント</th>
+<th>総合評価</th>
+<th>主な強み</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1位</td>
+<td><strong>Claude</strong></td>
+<td>優</td>
+<td>最も包括的、NON-NEGOTIABLE マーカー、具体的目標</td>
+</tr>
+<tr>
+<td>2位</td>
+<td><strong>Gemini</strong></td>
+<td>良</td>
+<td>Library-First、Simplicity/YAGNI、統合テスト重視</td>
+</tr>
+<tr>
+<td>2位</td>
+<td><strong>Codex</strong></td>
+<td>良</td>
+<td>Local-First Privacy、Scriptable Interfaces</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">同率2位について</p>
+<p>Codex と Gemini は総合評価「良」で同率2位です。プロジェクトの要件に応じて選択してください：</p>
+<ul>
+<li><strong>プライバシー重視</strong> → Codex</li>
+<li><strong>モジュラー設計重視</strong> → Gemini</li>
+</ul>
+</div>
+<h3 id="_20">ランキング正当化</h3>
+<ol>
+<li>
+<p><strong>Claude が1位の理由</strong>:</p>
+<ul>
+<li>唯一すべてのカテゴリで「優」を獲得</li>
+<li>具体的で測定可能な基準（&lt;500ms レイテンシ等）を含む</li>
+<li>フロントエンドとバックエンド両方の品質要件を網羅</li>
+<li>詳細なプロジェクト構造テンプレートを提供</li>
+</ul>
+</li>
+<li>
+<p><strong>Codex と Gemini が同率2位の理由</strong>:</p>
+<ul>
+<li>両者とも基本的な要件を満たしているが、詳細度で Claude に劣る</li>
+<li>それぞれユニークな強み（Privacy vs Library-First）を持つ</li>
+<li>総合評価は同等だが、得意分野が異なる</li>
+</ul>
+</li>
+</ol>
+<h2 id="_21">エージェント別詳細</h2>
+<p>各エージェントの詳細な憲法分析は以下のページを参照してください：</p>
+<ul>
+<li><a href="../../agents/codex/constitution/">Codex 憲法分析</a></li>
+<li><a href="../../agents/gemini/constitution/">Gemini 憲法分析</a></li>
+<li><a href="../../agents/claude/constitution/">Claude 憲法分析</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
