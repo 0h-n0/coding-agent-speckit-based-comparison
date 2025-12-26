@@ -14,7 +14,7 @@
 
 | エージェント | 提供元 | プラン | モデル |
 |-------------|--------|--------|--------|
-| Codex | OpenAI | Plus プラン | 5.2 |
+| Codex | OpenAI | Plus プラン | gpt-5.2-codex |
 | Gemini | Google | 無料枠 (Preview) | Gemini 3 Flash (Auto) |
 | Claude | Anthropic | MAX $100 プラン | Opus |
 

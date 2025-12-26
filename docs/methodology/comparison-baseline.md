@@ -8,7 +8,7 @@
 
 | Agent | Plan | Model | Notes |
 |-------|------|-------|-------|
-| Codex | Plus プラン | 5.2 | OpenAI Codex CLI |
+| Codex | Plus プラン | gpt-5.2-codex | OpenAI Codex CLI |
 | Gemini | 無料枠 (Preview) | Gemini 3 Flash | Auto モデル選択 |
 | Claude Code | MAX $100 プラン | Opus | Claude Code CLI |
 
