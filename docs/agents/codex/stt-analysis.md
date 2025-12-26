@@ -105,15 +105,15 @@
 
 | FR | 要件 | 実装状況 | エビデンス |
 |----|------|----------|------------|
-| FR-001 | 音声ファイル受付 | :white_check_mark: 実装済み | `transcribe_file()` 関数 |
-| FR-002 | WebSocketストリーミング | :white_check_mark: 実装済み | `stt_stream()` 関数 |
-| FR-003 | フォーマット検証 | :warning: 部分的 | `audio_format` パラメータで受け取るが検証は簡易 |
-| FR-004 | ヘルスエンドポイント | :x: 未実装 | STT APIにはなし |
-| FR-005 | エラーレスポンス | :white_check_mark: 実装済み | `ErrorResponse` スキーマ |
-| FR-006 | 60秒制限 | :x: 未実装 | 制限ロジックなし |
-| FR-007 | プレーンテキスト返却 | :white_check_mark: 実装済み | `TranscriptionResult.text` |
-| FR-008 | 認証なし | :white_check_mark: 実装済み | 認証コードなし |
-| FR-009 | WAV/FLAC/MP3サポート | :warning: 部分的 | 形式は受け取るが実際の変換はサービス依存 |
+| FR-001 | 音声ファイル受付 | ✅ 実装済み | `transcribe_file()` 関数 |
+| FR-002 | WebSocketストリーミング | ✅ 実装済み | `stt_stream()` 関数 |
+| FR-003 | フォーマット検証 | ⚠️ 部分的 | `audio_format` パラメータで受け取るが検証は簡易 |
+| FR-004 | ヘルスエンドポイント | ❌ 未実装 | STT APIにはなし |
+| FR-005 | エラーレスポンス | ✅ 実装済み | `ErrorResponse` スキーマ |
+| FR-006 | 60秒制限 | ❌ 未実装 | 制限ロジックなし |
+| FR-007 | プレーンテキスト返却 | ✅ 実装済み | `TranscriptionResult.text` |
+| FR-008 | 認証なし | ✅ 実装済み | 認証コードなし |
+| FR-009 | WAV/FLAC/MP3サポート | ⚠️ 部分的 | 形式は受け取るが実際の変換はサービス依存 |
 
 ### Summary
 

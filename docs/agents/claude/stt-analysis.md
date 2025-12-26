@@ -104,7 +104,7 @@
 | テストファイル数 | 4 |
 | テストケース概算 | 10-15件 |
 | テストタイプ | コントラクト + ユニットテスト |
-| ファイルサイズテスト | :white_check_mark: |
+| ファイルサイズテスト | ✅ |
 
 !!! success "テスト戦略"
     コントラクトテストとユニットテストを分離しており、保守性の高いテスト設計となっています。
@@ -117,15 +117,15 @@
 
 | FR | 要件 | 実装状況 | エビデンス |
 |----|------|----------|------------|
-| FR-001 | 音声ファイル変換 (WAV/MP3/FLAC/OGG) | :white_check_mark: 実装済み | `validate_audio_format()` 関数 |
-| FR-002 | reazonspeech-nemo-v2使用 | :warning: 部分的 | サービス層で実装（モック可能性あり） |
-| FR-003 | テキスト+処理時間+長さ返却 | :white_check_mark: 実装済み | `TranscriptionResponse` モデル |
-| FR-004 | 16kHzリサンプリング | :warning: 部分的 | サービス層で処理 |
-| FR-005 | 100MB制限 | :white_check_mark: 実装済み | `MAX_FILE_SIZE` 定数 |
-| FR-006 | WebSocketストリーミング | :white_check_mark: 実装済み | `stream_transcribe()` 関数 |
-| FR-007 | ステータスエンドポイント | :white_check_mark: 実装済み | `get_status()` 関数 |
-| FR-008 | ローカル処理のみ | :white_check_mark: 実装済み | 外部API呼び出しなし |
-| FR-009 | 構造化エラーレスポンス | :white_check_mark: 実装済み | `ErrorResponse` + `ErrorCode` Enum |
+| FR-001 | 音声ファイル変換 (WAV/MP3/FLAC/OGG) | ✅ 実装済み | `validate_audio_format()` 関数 |
+| FR-002 | reazonspeech-nemo-v2使用 | ⚠️ 部分的 | サービス層で実装（モック可能性あり） |
+| FR-003 | テキスト+処理時間+長さ返却 | ✅ 実装済み | `TranscriptionResponse` モデル |
+| FR-004 | 16kHzリサンプリング | ⚠️ 部分的 | サービス層で処理 |
+| FR-005 | 100MB制限 | ✅ 実装済み | `MAX_FILE_SIZE` 定数 |
+| FR-006 | WebSocketストリーミング | ✅ 実装済み | `stream_transcribe()` 関数 |
+| FR-007 | ステータスエンドポイント | ✅ 実装済み | `get_status()` 関数 |
+| FR-008 | ローカル処理のみ | ✅ 実装済み | 外部API呼び出しなし |
+| FR-009 | 構造化エラーレスポンス | ✅ 実装済み | `ErrorResponse` + `ErrorCode` Enum |
 
 ### Summary
 
