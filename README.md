@@ -12,11 +12,11 @@
 
 ### 対応エージェント
 
-| エージェント | 提供元 | プラン | モデル |
-|-------------|--------|--------|--------|
-| Codex | OpenAI | Plus プラン | gpt-5.2-codex |
-| Gemini | Google | 無料枠 (Preview) | Gemini 3 Flash (Auto) |
-| Claude | Anthropic | MAX $100 プラン | Opus |
+| エージェント | 提供元 | プラン | モデル | リリース日 |
+|-------------|--------|--------|--------|------------|
+| Codex | OpenAI | Plus プラン | gpt-5.2-codex | 2025-12-18 |
+| Gemini | Google | 無料枠 (Preview) | Gemini 3 Flash (Auto) | 2025-12-17 |
+| Claude | Anthropic | MAX $100 プラン | Opus 4.5 | 2025-11-24 |
 
 ### 比較機能
 
