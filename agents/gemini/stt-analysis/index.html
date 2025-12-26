@@ -2350,15 +2350,15 @@
 </tr>
 <tr>
 <td>API Keyテスト</td>
-<td>:white_check_mark:</td>
+<td>✅</td>
 </tr>
 <tr>
 <td>ファイルサイズテスト</td>
-<td>:white_check_mark:</td>
+<td>✅</td>
 </tr>
 <tr>
 <td>Rate Limitテスト</td>
-<td>:white_check_mark: (モック)</td>
+<td>✅ (モック)</td>
 </tr>
 </tbody>
 </table>
@@ -2382,73 +2382,73 @@
 <tr>
 <td>FR-001</td>
 <td>/transcribe/file エンドポイント</td>
-<td>:white_check_mark: 実装済み</td>
+<td>✅ 実装済み</td>
 <td><code>transcribe_file()</code> 関数</td>
 </tr>
 <tr>
 <td>FR-002</td>
 <td>WAV/MP3サポート</td>
-<td>:white_check_mark: 実装済み</td>
+<td>✅ 実装済み</td>
 <td><code>content_type</code> 検証</td>
 </tr>
 <tr>
 <td>FR-003</td>
 <td>JSON返却</td>
-<td>:white_check_mark: 実装済み</td>
+<td>✅ 実装済み</td>
 <td><code>TranscriptionResult</code> モデル</td>
 </tr>
 <tr>
 <td>FR-004</td>
 <td>/transcribe/stream エンドポイント</td>
-<td>:white_check_mark: 実装済み</td>
+<td>✅ 実装済み</td>
 <td><code>transcribe_stream()</code> 関数</td>
 </tr>
 <tr>
 <td>FR-005</td>
 <td>タイムスタンプ付き結果</td>
-<td>:white_check_mark: 実装済み</td>
+<td>✅ 実装済み</td>
 <td><code>start_timestamp</code>, <code>end_timestamp</code></td>
 </tr>
 <tr>
 <td>FR-006</td>
 <td>reazonspeech-nemo-v2使用</td>
-<td>:warning: 部分的</td>
+<td>⚠️ 部分的</td>
 <td>モック実装、実際のモデルは未確認</td>
 </tr>
 <tr>
 <td>FR-007</td>
 <td>エラーハンドリング</td>
-<td>:white_check_mark: 実装済み</td>
+<td>✅ 実装済み</td>
 <td><code>HTTPException</code> 使用</td>
 </tr>
 <tr>
 <td>FR-008</td>
 <td>50MB制限</td>
-<td>:white_check_mark: 実装済み</td>
+<td>✅ 実装済み</td>
 <td><code>MAX_FILE_SIZE_BYTES</code> 定数</td>
 </tr>
 <tr>
 <td>FR-009</td>
 <td>API Key認証</td>
-<td>:white_check_mark: 実装済み</td>
+<td>✅ 実装済み</td>
 <td><code>get_api_key</code> 依存性</td>
 </tr>
 <tr>
 <td>FR-010</td>
 <td>構造化ログ</td>
-<td>:warning: 部分的</td>
+<td>⚠️ 部分的</td>
 <td>ログ設定は存在するが詳細未確認</td>
 </tr>
 <tr>
 <td>FR-011</td>
 <td>Prometheusメトリクス</td>
-<td>:warning: 部分的</td>
+<td>⚠️ 部分的</td>
 <td><code>middlewares/metrics.py</code> 存在</td>
 </tr>
 <tr>
 <td>FR-012</td>
 <td>Rate Limiting</td>
-<td>:white_check_mark: 実装済み</td>
+<td>✅ 実装済み</td>
 <td><code>rate_limit_dependency</code></td>
 </tr>
 </tbody>
