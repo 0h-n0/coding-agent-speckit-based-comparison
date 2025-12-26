@@ -1266,10 +1266,32 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#cli-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLI Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#model-references" class="md-nav__link">
     <span class="md-ellipsis">
       
         Model References
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cli-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLI References
       
     </span>
   </a>
@@ -1993,10 +2015,32 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#cli-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLI Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#model-references" class="md-nav__link">
     <span class="md-ellipsis">
       
         Model References
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cli-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLI References
       
     </span>
   </a>
@@ -2266,6 +2310,7 @@
 <th>Plan</th>
 <th>Model</th>
 <th>Release Date</th>
+<th>CLI Version</th>
 <th>Notes</th>
 </tr>
 </thead>
@@ -2275,6 +2320,7 @@
 <td>Plus プラン</td>
 <td>gpt-5.2-codex</td>
 <td>2025-12-18</td>
+<td>0.77.0</td>
 <td>OpenAI Codex CLI</td>
 </tr>
 <tr>
@@ -2282,6 +2328,7 @@
 <td>無料枠 (Preview)</td>
 <td>Gemini 3 Flash</td>
 <td>2025-12-17</td>
+<td>0.22.2</td>
 <td>Auto モデル選択</td>
 </tr>
 <tr>
@@ -2289,19 +2336,36 @@
 <td>MAX $100 プラン</td>
 <td>Opus 4.5</td>
 <td>2025-11-24</td>
+<td>2.0.76</td>
 <td>Claude Code CLI</td>
 </tr>
 </tbody>
 </table>
+<h3 id="cli-installation">CLI Installation</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Codex CLI</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>npm<span class="w"> </span>i<span class="w"> </span>-g<span class="w"> </span>@openai/codex
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Gemini CLI</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>npm<span class="w"> </span>i<span class="w"> </span>-g<span class="w"> </span>@google/gemini-cli
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Claude Code</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>npm<span class="w"> </span>i<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code
+</code></pre></div>
 <h3 id="model-references">Model References</h3>
 <ul>
 <li><a href="https://openai.com/index/introducing-gpt-5-2-codex/">Introducing GPT-5.2-Codex | OpenAI</a></li>
 <li><a href="https://blog.google/products/gemini/gemini-3-flash/">Introducing Gemini 3 Flash | Google</a></li>
 <li><a href="https://www.anthropic.com/news/claude-opus-4-5">Introducing Claude Opus 4.5 | Anthropic</a></li>
 </ul>
+<h3 id="cli-references">CLI References</h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/@openai/codex">@openai/codex - npm</a></li>
+<li><a href="https://www.npmjs.com/package/@google/gemini-cli">@google/gemini-cli - npm</a></li>
+<li><a href="https://www.npmjs.com/package/@anthropic-ai/claude-code">@anthropic-ai/claude-code - npm</a></li>
+</ul>
 <h2 id="common-workflow">Common Workflow</h2>
 <p>全エージェントで同一のSpeckit開発ワークフローを使用します。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>specify → clarify → plan → tasks → implement
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>specify → clarify → plan → tasks → implement
 </code></pre></div>
 <h3 id="workflow-details">Workflow Details</h3>
 <table>
@@ -2342,7 +2406,7 @@
 </table>
 <h3 id="claude-code-specific">Claude Code Specific</h3>
 <p>Claude Codeのみ、<code>implement</code>後にデフォルトで<code>review</code>コマンドを実行します。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>specify → clarify → plan → tasks → implement → review
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>specify → clarify → plan → tasks → implement → review
 </code></pre></div>
 <h2 id="common-constitution">Common Constitution</h2>
 <p>全エージェントに対して以下の共通Constitutionを適用します。</p>
@@ -2407,74 +2471,74 @@
 <h2 id="feature-commands">Feature Commands</h2>
 <p>全エージェントに対して以下の10機能を同一の指示で実装させます。</p>
 <h3 id="f-1">F-1: プロジェクト初期構成</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>speckit.specify &quot;ローカル音声アシスタントのバックエンドとフロントエンドの基本プロジェクト構成を作成したい。FastAPI + React (または Next.js) 構成。&quot;
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>speckit.clarify
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>speckit.plan
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>speckit.tasks
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>speckit.implement
-</code></pre></div>
-<h3 id="f-2-sttreazonspeech-nemo-v2">F-2: STT（ReazonSpeech NeMo v2）</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>speckit.specify &quot;reazon-research/reazonspeech-nemo-v2 を用いて音声ファイルまたはマイク入力から日本語テキストを生成する STT API を実装したい。&quot;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>speckit.specify &quot;ローカル音声アシスタントのバックエンドとフロントエンドの基本プロジェクト構成を作成したい。FastAPI + React (または Next.js) 構成。&quot;
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>speckit.clarify
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>speckit.plan
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>speckit.tasks
 <a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>speckit.implement
 </code></pre></div>
-<h3 id="f-3-llmopenai-gpt-5-mini">F-3: LLM（OpenAI gpt-5-mini）</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>speckit.specify &quot;OpenAI の gpt-5-mini に問い合わせてテキスト応答を生成する LLM サービスを実装したい。&quot;
+<h3 id="f-2-sttreazonspeech-nemo-v2">F-2: STT（ReazonSpeech NeMo v2）</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>speckit.specify &quot;reazon-research/reazonspeech-nemo-v2 を用いて音声ファイルまたはマイク入力から日本語テキストを生成する STT API を実装したい。&quot;
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>speckit.clarify
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>speckit.plan
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>speckit.tasks
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>speckit.implement
 </code></pre></div>
-<h3 id="f-4-ttsstyle-bert-vits2">F-4: TTS（Style-Bert-VITS2）</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>speckit.specify &quot;Style-Bert-VITS2 を用いて日本語テキストを自然音声に変換する TTS API を実装したい。&quot;
+<h3 id="f-3-llmopenai-gpt-5-mini">F-3: LLM（OpenAI gpt-5-mini）</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>speckit.specify &quot;OpenAI の gpt-5-mini に問い合わせてテキスト応答を生成する LLM サービスを実装したい。&quot;
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>speckit.clarify
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>speckit.plan
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>speckit.tasks
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>speckit.implement
 </code></pre></div>
-<h3 id="f-5">F-5: 会話オーケストレーター</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>speckit.specify &quot;STT → LLM → TTS を順番に実行し、1つの音声対話を完結させるオーケストレーターを実装したい。&quot;
+<h3 id="f-4-ttsstyle-bert-vits2">F-4: TTS（Style-Bert-VITS2）</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>speckit.specify &quot;Style-Bert-VITS2 を用いて日本語テキストを自然音声に変換する TTS API を実装したい。&quot;
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>speckit.clarify
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>speckit.plan
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>speckit.tasks
 <a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>speckit.implement
 </code></pre></div>
-<h3 id="f-6">F-6: 会話履歴管理</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>speckit.specify &quot;ユーザーとアシスタントの会話履歴を保存・取得できるストレージ機能を実装したい。SQLiteを想定。&quot;
+<h3 id="f-5">F-5: 会話オーケストレーター</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>speckit.specify &quot;STT → LLM → TTS を順番に実行し、1つの音声対話を完結させるオーケストレーターを実装したい。&quot;
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>speckit.clarify
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>speckit.plan
 <a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>speckit.tasks
 <a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>speckit.implement
 </code></pre></div>
-<h3 id="f-7-chatgptui">F-7: フロントエンド（ChatGPT風UI）</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>speckit.specify &quot;ChatGPTのように会話履歴が表示され、音声入力と音声出力ができるWeb UIを実装したい。&quot;
+<h3 id="f-6">F-6: 会話履歴管理</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>speckit.specify &quot;ユーザーとアシスタントの会話履歴を保存・取得できるストレージ機能を実装したい。SQLiteを想定。&quot;
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>speckit.clarify
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>speckit.plan
 <a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>speckit.tasks
 <a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>speckit.implement
 </code></pre></div>
-<h3 id="f-8-websocket">F-8: リアルタイム通信（WebSocket）</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>speckit.specify &quot;音声入力・文字起こし・応答・音声再生をリアルタイムで表示できるように WebSocket 通信を追加したい。&quot;
+<h3 id="f-7-chatgptui">F-7: フロントエンド（ChatGPT風UI）</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>speckit.specify &quot;ChatGPTのように会話履歴が表示され、音声入力と音声出力ができるWeb UIを実装したい。&quot;
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>speckit.clarify
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>speckit.plan
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>speckit.tasks
 <a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>speckit.implement
 </code></pre></div>
-<h3 id="f-9">F-9: 設定管理</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>speckit.specify &quot;APIキー、モデルパス、音声デバイスなどを設定ファイルまたは .env で管理できるようにしたい。&quot;
+<h3 id="f-8-websocket">F-8: リアルタイム通信（WebSocket）</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>speckit.specify &quot;音声入力・文字起こし・応答・音声再生をリアルタイムで表示できるように WebSocket 通信を追加したい。&quot;
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>speckit.clarify
 <a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>speckit.plan
 <a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>speckit.tasks
 <a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>speckit.implement
 </code></pre></div>
-<h3 id="f-10">F-10: ローカル起動統合</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>speckit.specify &quot;ローカルで1コマンドで全サービスが起動するように docker-compose または make コマンドを用意したい。&quot;
+<h3 id="f-9">F-9: 設定管理</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>speckit.specify &quot;APIキー、モデルパス、音声デバイスなどを設定ファイルまたは .env で管理できるようにしたい。&quot;
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>speckit.clarify
 <a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>speckit.plan
 <a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>speckit.tasks
 <a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>speckit.implement
+</code></pre></div>
+<h3 id="f-10">F-10: ローカル起動統合</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>speckit.specify &quot;ローカルで1コマンドで全サービスが起動するように docker-compose または make コマンドを用意したい。&quot;
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>speckit.clarify
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>speckit.plan
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>speckit.tasks
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>speckit.implement
 </code></pre></div>
 <h2 id="feature-summary">Feature Summary</h2>
 <table>
