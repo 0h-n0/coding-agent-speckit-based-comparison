@@ -47,13 +47,20 @@ nav:
   - Features: features/index.md
   - Agents:
     - Overview: agents/index.md
-    - Codex: agents/codex/index.md
-    - Gemini: agents/gemini/index.md
-    - Claude: agents/claude/index.md
+    - Codex:
+      - Overview: agents/codex/index.md
+      - Constitution: agents/codex/constitution.md
+    - Gemini:
+      - Overview: agents/gemini/index.md
+      - Constitution: agents/gemini/constitution.md
+    - Claude:
+      - Overview: agents/claude/index.md
+      - Constitution: agents/claude/constitution.md
   - Methodology:
     - Evaluation Criteria: methodology/evaluation-criteria.md
     - Metrics: methodology/metrics.md
     - Benchmarks: methodology/benchmarks.md
+    - Constitution Comparison: methodology/constitution-comparison.md
   - Development:
     - Contributing: development/contributing.md
     - Architecture: development/architecture.md
