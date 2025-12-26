@@ -7,6 +7,9 @@
 
     This document is written in Japanese. Technical terms are kept in English for clarity.
 
+!!! info "前提条件"
+    この比較の実験環境、共通ワークフロー、Constitution については [Comparison Baseline](comparison-baseline.md) を参照してください。
+
 ## 比較ベースライン
 
 この比較は以下のコミット時点の憲法に基づいています。

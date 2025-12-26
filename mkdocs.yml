@@ -60,6 +60,7 @@ nav:
       - Constitution: agents/claude/constitution.md
       - STT Analysis: agents/claude/stt-analysis.md
   - Methodology:
+    - Comparison Baseline: methodology/comparison-baseline.md
     - Evaluation Criteria: methodology/evaluation-criteria.md
     - Metrics: methodology/metrics.md
     - Benchmarks: methodology/benchmarks.md
