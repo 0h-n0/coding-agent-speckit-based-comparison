@@ -35,15 +35,15 @@
 
 | 要件カテゴリ | Codex | Gemini | Claude |
 |--------------|-------|--------|--------|
-| ファイル変換エンドポイント | :white_check_mark: FR-001 | :white_check_mark: FR-001 | :white_check_mark: FR-001 |
+| ファイル変換エンドポイント | ✅ FR-001 | ✅ FR-001 | ✅ FR-001 |
 | サポート形式 | WAV, FLAC, MP3 (FR-009) | WAV, MP3 (FR-002) | WAV, MP3, FLAC, OGG (FR-001) |
-| WebSocketストリーミング | :white_check_mark: FR-002 | :white_check_mark: FR-004 | :white_check_mark: FR-006 |
-| 認証要件 | :x: なし (FR-008) | :white_check_mark: API Key (FR-009) | :x: なし (CORS制限) |
+| WebSocketストリーミング | ✅ FR-002 | ✅ FR-004 | ✅ FR-006 |
+| 認証要件 | ❌ なし (FR-008) | ✅ API Key (FR-009) | ❌ なし (CORS制限) |
 | ファイルサイズ制限 | 60秒 (FR-006) | 50MB (FR-008) | 100MB (FR-005) |
-| ヘルスチェック | :white_check_mark: FR-004 | :x: 未指定 | :white_check_mark: FR-007 |
-| エラーハンドリング | :white_check_mark: FR-005 | :white_check_mark: FR-007 | :white_check_mark: FR-009 |
-| Rate Limiting | :x: 未指定 | :white_check_mark: FR-012 | :x: 未指定 |
-| Observability (Logging/Metrics) | :x: 未指定 | :white_check_mark: FR-010, FR-011 | :x: 未指定 |
+| ヘルスチェック | ✅ FR-004 | ❌ 未指定 | ✅ FR-007 |
+| エラーハンドリング | ✅ FR-005 | ✅ FR-007 | ✅ FR-009 |
+| Rate Limiting | ❌ 未指定 | ✅ FR-012 | ❌ 未指定 |
+| Observability (Logging/Metrics) | ❌ 未指定 | ✅ FR-010, FR-011 | ❌ 未指定 |
 | **機能要件数** | **9件** | **12件** | **9件** |
 
 !!! note "Geminiの特徴"
@@ -94,9 +94,9 @@
 |------|-------|--------|--------|
 | ファイル変換パス | `POST /stt/file` | `POST /api/v1/transcribe/file` | `POST /api/stt/transcribe` |
 | ストリーミングパス | `WS /stt/stream` | `WS /api/v1/transcribe/stream` | `WS /api/stt/stream` |
-| ステータスパス | :x: なし | :x: なし | `GET /api/stt/status` |
+| ステータスパス | ❌ なし | ❌ なし | `GET /api/stt/status` |
 | APIプレフィックス | なし | `/api/v1` | `/api/stt` |
-| バージョニング | :x: なし | :white_check_mark: v1 | :x: なし |
+| バージョニング | ❌ なし | ✅ v1 | ❌ なし |
 
 !!! note "APIバージョニング"
     Geminiのみが明示的なAPIバージョニング（/api/v1）を採用しています。Claudeはステータスエンドポイントを提供し、モデルの状態を監視可能にしています。
@@ -107,8 +107,8 @@
 |------|-------|--------|--------|
 | エラーレスポンス形式 | `ErrorResponse(code, message)` | `HTTPException(status_code, detail)` | `ErrorResponse(error_code, message, details)` |
 | エラーコード定義 | 文字列 (`unsupported_audio_format`) | 文字列 (detail内) | Enum (`ErrorCode.UNSUPPORTED_FORMAT`) |
-| 詳細情報 | :x: なし | :x: なし | :white_check_mark: details オブジェクト |
-| ログ出力 | :x: なし | :x: 未確認 | :white_check_mark: 構造化ログ |
+| 詳細情報 | ❌ なし | ❌ なし | ✅ details オブジェクト |
+| ログ出力 | ❌ なし | ❌ 未確認 | ✅ 構造化ログ |
 
 ### WebSocket Implementation
 
@@ -116,7 +116,7 @@
 |------|-------|--------|--------|
 | プロトコル | バイナリ + JSON制御 | バイナリのみ | バイナリ (PCM) |
 | 終了シグナル | `{"event": "end"}` | クライアント切断 | クライアント切断 |
-| 中間結果 | :x: なし | :white_check_mark: `is_final` フラグ | :white_check_mark: `partial`/`final` type |
+| 中間結果 | ❌ なし | ✅ `is_final` フラグ | ✅ `partial`/`final` type |
 | バッファリング | フレームリスト | async generator | `AudioBuffer` クラス |
 
 !!! tip "中間結果のサポート"
@@ -129,9 +129,9 @@
 | テストファイル数 | 2 | 2 | 4 |
 | テストケース概算 | 2-3件 | 6-8件 | 10-15件 |
 | テストタイプ | 基本的な統合テスト | モック + 統合テスト | コントラクト + ユニットテスト |
-| API Keyテスト | :x: | :white_check_mark: | :x: (認証なし) |
-| ファイルサイズテスト | :x: | :white_check_mark: | :white_check_mark: |
-| Rate Limitテスト | :x: | :white_check_mark: (モック) | :x: (Rate Limitなし) |
+| API Keyテスト | ❌ | ✅ | ❌ (認証なし) |
+| ファイルサイズテスト | ❌ | ✅ | ✅ |
+| Rate Limitテスト | ❌ | ✅ (モック) | ❌ (Rate Limitなし) |
 
 ---
 
@@ -143,15 +143,15 @@
 
 | FR | 要件 | 実装状況 | エビデンス |
 |----|------|----------|------------|
-| FR-001 | 音声ファイル受付 | :white_check_mark: 実装済み | `transcribe_file()` 関数 |
-| FR-002 | WebSocketストリーミング | :white_check_mark: 実装済み | `stt_stream()` 関数 |
-| FR-003 | フォーマット検証 | :warning: 部分的 | `audio_format` パラメータで受け取るが検証は簡易 |
-| FR-004 | ヘルスエンドポイント | :x: 未実装 | STT APIにはなし |
-| FR-005 | エラーレスポンス | :white_check_mark: 実装済み | `ErrorResponse` スキーマ |
-| FR-006 | 60秒制限 | :x: 未実装 | 制限ロジックなし |
-| FR-007 | プレーンテキスト返却 | :white_check_mark: 実装済み | `TranscriptionResult.text` |
-| FR-008 | 認証なし | :white_check_mark: 実装済み | 認証コードなし |
-| FR-009 | WAV/FLAC/MP3サポート | :warning: 部分的 | 形式は受け取るが実際の変換はサービス依存 |
+| FR-001 | 音声ファイル受付 | ✅ 実装済み | `transcribe_file()` 関数 |
+| FR-002 | WebSocketストリーミング | ✅ 実装済み | `stt_stream()` 関数 |
+| FR-003 | フォーマット検証 | ⚠️ 部分的 | `audio_format` パラメータで受け取るが検証は簡易 |
+| FR-004 | ヘルスエンドポイント | ❌ 未実装 | STT APIにはなし |
+| FR-005 | エラーレスポンス | ✅ 実装済み | `ErrorResponse` スキーマ |
+| FR-006 | 60秒制限 | ❌ 未実装 | 制限ロジックなし |
+| FR-007 | プレーンテキスト返却 | ✅ 実装済み | `TranscriptionResult.text` |
+| FR-008 | 認証なし | ✅ 実装済み | 認証コードなし |
+| FR-009 | WAV/FLAC/MP3サポート | ⚠️ 部分的 | 形式は受け取るが実際の変換はサービス依存 |
 
 **達成率**: 6/9 (67%) + 2部分的
 
@@ -159,18 +159,18 @@
 
 | FR | 要件 | 実装状況 | エビデンス |
 |----|------|----------|------------|
-| FR-001 | /transcribe/file エンドポイント | :white_check_mark: 実装済み | `transcribe_file()` 関数 |
-| FR-002 | WAV/MP3サポート | :white_check_mark: 実装済み | `content_type` 検証 |
-| FR-003 | JSON返却 | :white_check_mark: 実装済み | `TranscriptionResult` モデル |
-| FR-004 | /transcribe/stream エンドポイント | :white_check_mark: 実装済み | `transcribe_stream()` 関数 |
-| FR-005 | タイムスタンプ付き結果 | :white_check_mark: 実装済み | `start_timestamp`, `end_timestamp` |
-| FR-006 | reazonspeech-nemo-v2使用 | :warning: 部分的 | モック実装、実際のモデルは未確認 |
-| FR-007 | エラーハンドリング | :white_check_mark: 実装済み | `HTTPException` 使用 |
-| FR-008 | 50MB制限 | :white_check_mark: 実装済み | `MAX_FILE_SIZE_BYTES` 定数 |
-| FR-009 | API Key認証 | :white_check_mark: 実装済み | `get_api_key` 依存性 |
-| FR-010 | 構造化ログ | :warning: 部分的 | ログ設定は存在するが詳細未確認 |
-| FR-011 | Prometheusメトリクス | :warning: 部分的 | `middlewares/metrics.py` 存在 |
-| FR-012 | Rate Limiting | :white_check_mark: 実装済み | `rate_limit_dependency` |
+| FR-001 | /transcribe/file エンドポイント | ✅ 実装済み | `transcribe_file()` 関数 |
+| FR-002 | WAV/MP3サポート | ✅ 実装済み | `content_type` 検証 |
+| FR-003 | JSON返却 | ✅ 実装済み | `TranscriptionResult` モデル |
+| FR-004 | /transcribe/stream エンドポイント | ✅ 実装済み | `transcribe_stream()` 関数 |
+| FR-005 | タイムスタンプ付き結果 | ✅ 実装済み | `start_timestamp`, `end_timestamp` |
+| FR-006 | reazonspeech-nemo-v2使用 | ⚠️ 部分的 | モック実装、実際のモデルは未確認 |
+| FR-007 | エラーハンドリング | ✅ 実装済み | `HTTPException` 使用 |
+| FR-008 | 50MB制限 | ✅ 実装済み | `MAX_FILE_SIZE_BYTES` 定数 |
+| FR-009 | API Key認証 | ✅ 実装済み | `get_api_key` 依存性 |
+| FR-010 | 構造化ログ | ⚠️ 部分的 | ログ設定は存在するが詳細未確認 |
+| FR-011 | Prometheusメトリクス | ⚠️ 部分的 | `middlewares/metrics.py` 存在 |
+| FR-012 | Rate Limiting | ✅ 実装済み | `rate_limit_dependency` |
 
 **達成率**: 9/12 (75%) + 3部分的
 
@@ -178,15 +178,15 @@
 
 | FR | 要件 | 実装状況 | エビデンス |
 |----|------|----------|------------|
-| FR-001 | 音声ファイル変換 (WAV/MP3/FLAC/OGG) | :white_check_mark: 実装済み | `validate_audio_format()` 関数 |
-| FR-002 | reazonspeech-nemo-v2使用 | :warning: 部分的 | サービス層で実装（モック可能性あり） |
-| FR-003 | テキスト+処理時間+長さ返却 | :white_check_mark: 実装済み | `TranscriptionResponse` モデル |
-| FR-004 | 16kHzリサンプリング | :warning: 部分的 | サービス層で処理 |
-| FR-005 | 100MB制限 | :white_check_mark: 実装済み | `MAX_FILE_SIZE` 定数 |
-| FR-006 | WebSocketストリーミング | :white_check_mark: 実装済み | `stream_transcribe()` 関数 |
-| FR-007 | ステータスエンドポイント | :white_check_mark: 実装済み | `get_status()` 関数 |
-| FR-008 | ローカル処理のみ | :white_check_mark: 実装済み | 外部API呼び出しなし |
-| FR-009 | 構造化エラーレスポンス | :white_check_mark: 実装済み | `ErrorResponse` + `ErrorCode` Enum |
+| FR-001 | 音声ファイル変換 (WAV/MP3/FLAC/OGG) | ✅ 実装済み | `validate_audio_format()` 関数 |
+| FR-002 | reazonspeech-nemo-v2使用 | ⚠️ 部分的 | サービス層で実装（モック可能性あり） |
+| FR-003 | テキスト+処理時間+長さ返却 | ✅ 実装済み | `TranscriptionResponse` モデル |
+| FR-004 | 16kHzリサンプリング | ⚠️ 部分的 | サービス層で処理 |
+| FR-005 | 100MB制限 | ✅ 実装済み | `MAX_FILE_SIZE` 定数 |
+| FR-006 | WebSocketストリーミング | ✅ 実装済み | `stream_transcribe()` 関数 |
+| FR-007 | ステータスエンドポイント | ✅ 実装済み | `get_status()` 関数 |
+| FR-008 | ローカル処理のみ | ✅ 実装済み | 外部API呼び出しなし |
+| FR-009 | 構造化エラーレスポンス | ✅ 実装済み | `ErrorResponse` + `ErrorCode` Enum |
 
 **達成率**: 7/9 (78%) + 2部分的
 

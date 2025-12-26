@@ -102,9 +102,9 @@
 | テストファイル数 | 2 |
 | テストケース概算 | 6-8件 |
 | テストタイプ | モック + 統合テスト |
-| API Keyテスト | :white_check_mark: |
-| ファイルサイズテスト | :white_check_mark: |
-| Rate Limitテスト | :white_check_mark: (モック) |
+| API Keyテスト | ✅ |
+| ファイルサイズテスト | ✅ |
+| Rate Limitテスト | ✅ (モック) |
 
 !!! success "テストカバレッジ"
     認証、ファイルサイズ制限、Rate Limitingなど、主要な機能に対するテストが実装されています。
@@ -117,18 +117,18 @@
 
 | FR | 要件 | 実装状況 | エビデンス |
 |----|------|----------|------------|
-| FR-001 | /transcribe/file エンドポイント | :white_check_mark: 実装済み | `transcribe_file()` 関数 |
-| FR-002 | WAV/MP3サポート | :white_check_mark: 実装済み | `content_type` 検証 |
-| FR-003 | JSON返却 | :white_check_mark: 実装済み | `TranscriptionResult` モデル |
-| FR-004 | /transcribe/stream エンドポイント | :white_check_mark: 実装済み | `transcribe_stream()` 関数 |
-| FR-005 | タイムスタンプ付き結果 | :white_check_mark: 実装済み | `start_timestamp`, `end_timestamp` |
-| FR-006 | reazonspeech-nemo-v2使用 | :warning: 部分的 | モック実装、実際のモデルは未確認 |
-| FR-007 | エラーハンドリング | :white_check_mark: 実装済み | `HTTPException` 使用 |
-| FR-008 | 50MB制限 | :white_check_mark: 実装済み | `MAX_FILE_SIZE_BYTES` 定数 |
-| FR-009 | API Key認証 | :white_check_mark: 実装済み | `get_api_key` 依存性 |
-| FR-010 | 構造化ログ | :warning: 部分的 | ログ設定は存在するが詳細未確認 |
-| FR-011 | Prometheusメトリクス | :warning: 部分的 | `middlewares/metrics.py` 存在 |
-| FR-012 | Rate Limiting | :white_check_mark: 実装済み | `rate_limit_dependency` |
+| FR-001 | /transcribe/file エンドポイント | ✅ 実装済み | `transcribe_file()` 関数 |
+| FR-002 | WAV/MP3サポート | ✅ 実装済み | `content_type` 検証 |
+| FR-003 | JSON返却 | ✅ 実装済み | `TranscriptionResult` モデル |
+| FR-004 | /transcribe/stream エンドポイント | ✅ 実装済み | `transcribe_stream()` 関数 |
+| FR-005 | タイムスタンプ付き結果 | ✅ 実装済み | `start_timestamp`, `end_timestamp` |
+| FR-006 | reazonspeech-nemo-v2使用 | ⚠️ 部分的 | モック実装、実際のモデルは未確認 |
+| FR-007 | エラーハンドリング | ✅ 実装済み | `HTTPException` 使用 |
+| FR-008 | 50MB制限 | ✅ 実装済み | `MAX_FILE_SIZE_BYTES` 定数 |
+| FR-009 | API Key認証 | ✅ 実装済み | `get_api_key` 依存性 |
+| FR-010 | 構造化ログ | ⚠️ 部分的 | ログ設定は存在するが詳細未確認 |
+| FR-011 | Prometheusメトリクス | ⚠️ 部分的 | `middlewares/metrics.py` 存在 |
+| FR-012 | Rate Limiting | ✅ 実装済み | `rate_limit_dependency` |
 
 ### Summary
 
