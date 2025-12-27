@@ -52,16 +52,19 @@ nav:
       - Constitution: agents/codex/constitution.md
       - STT Analysis: agents/codex/stt-analysis.md
       - LLM Analysis: agents/codex/llm-analysis.md
+      - TTS Analysis: agents/codex/tts-analysis.md
     - Gemini:
       - Overview: agents/gemini/index.md
       - Constitution: agents/gemini/constitution.md
       - STT Analysis: agents/gemini/stt-analysis.md
       - LLM Analysis: agents/gemini/llm-analysis.md
+      - TTS Analysis: agents/gemini/tts-analysis.md
     - Claude:
       - Overview: agents/claude/index.md
       - Constitution: agents/claude/constitution.md
       - STT Analysis: agents/claude/stt-analysis.md
       - LLM Analysis: agents/claude/llm-analysis.md
+      - TTS Analysis: agents/claude/tts-analysis.md
   - Methodology:
     - Comparison Baseline: methodology/comparison-baseline.md
     - Evaluation Criteria: methodology/evaluation-criteria.md
@@ -70,6 +73,7 @@ nav:
     - Constitution Comparison: methodology/constitution-comparison.md
     - STT Comparison: methodology/stt-comparison.md
     - LLM Comparison: methodology/llm-comparison.md
+    - TTS Comparison: methodology/tts-comparison.md
   - Development:
     - Contributing: development/contributing.md
     - Architecture: development/architecture.md
