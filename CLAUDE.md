@@ -5,6 +5,8 @@ Auto-generated from all feature plans. Last updated: 2025-12-26
 ## Active Technologies
 - Markdown + MkDocs (Python 3.11+ for build) + MkDocs, Material for MkDocs theme, pymdownx extensions (003-stt-implementation-comparison)
 - N/A (静的ドキュメント生成) (003-stt-implementation-comparison)
+- Markdown (MkDocs-compatible) + MkDocs Material theme, pymdownx extensions (004-llm-implementation-comparison)
+- N/A (static documentation) (004-llm-implementation-comparison)
 
 - Markdown (MkDocs-compatible) + MkDocs, Material for MkDocs (already configured) (002-constitution-comparison)
 
@@ -24,9 +26,10 @@ tests/
 Markdown (MkDocs-compatible): Follow standard conventions
 
 ## Recent Changes
+- 005-tts-implementation-comparison: Added Markdown (MkDocs-compatible) + MkDocs Material theme, pymdownx extensions
+- 004-llm-implementation-comparison: Added Markdown (MkDocs-compatible) + MkDocs Material theme, pymdownx extensions
 - 003-stt-implementation-comparison: Added Markdown + MkDocs (Python 3.11+ for build) + MkDocs, Material for MkDocs theme, pymdownx extensions
 
-- 002-constitution-comparison: Added Markdown (MkDocs-compatible) + MkDocs, Material for MkDocs (already configured)
 
 <!-- MANUAL ADDITIONS START -->
 <!-- MANUAL ADDITIONS END -->
