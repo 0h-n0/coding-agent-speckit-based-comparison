@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://0h-n0.github.io/coding-agent-speckit-based-comparison/methodology/llm-comparison/">
+        <link rel="canonical" href="https://0h-n0.github.io/coding-agent-speckit-based-comparison/methodology/tts-comparison/">
       
       
-        <link rel="prev" href="../stt-comparison/">
+        <link rel="prev" href="../llm-comparison/">
       
       
-        <link rel="next" href="../tts-comparison/">
+        <link rel="next" href="../../development/contributing/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>LLM Comparison - Coding Agent Comparison</title>
+        <title>TTS Comparison - Coding Agent Comparison</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#llm-implementation-comparison" class="md-skip">
+        <a href="#tts-implementation-comparison" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LLM Comparison
+              TTS Comparison
             
           </span>
         </div>
@@ -1527,6 +1527,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../llm-comparison/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM Comparison
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1546,7 +1574,7 @@
   <span class="md-ellipsis">
     
   
-    LLM Comparison
+    TTS Comparison
   
 
     
@@ -1564,7 +1592,7 @@
   <span class="md-ellipsis">
     
   
-    LLM Comparison
+    TTS Comparison
   
 
     
@@ -1613,10 +1641,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#llm-spec-locations" class="md-nav__link">
+  <a href="#tts-spec-locations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        LLM Spec Locations
+        TTS Spec Locations
       
     </span>
   </a>
@@ -1652,6 +1680,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#feature-support-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Support Matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#success-criteria-comparison" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1680,10 +1719,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#code-structure" class="md-nav__link">
+  <a href="#architecture-comparison" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Code Structure
+        Architecture Comparison
       
     </span>
   </a>
@@ -1691,10 +1730,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#api-endpoint-design" class="md-nav__link">
+  <a href="#code-quality-metrics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        API Endpoint Design
+        Code Quality Metrics
       
     </span>
   </a>
@@ -1702,10 +1741,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-handling-pattern" class="md-nav__link">
+  <a href="#implementation-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error Handling Pattern
+        Implementation Features
       
     </span>
   </a>
@@ -1713,10 +1752,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#chat-history-implementation" class="md-nav__link">
+  <a href="#streaming-implementation-gemini-only" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Chat History Implementation
+        Streaming Implementation (Gemini Only)
       
     </span>
   </a>
@@ -1724,10 +1763,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#test-coverage" class="md-nav__link">
+  <a href="#error-handling-comparison" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Test Coverage
+        Error Handling Comparison
       
     </span>
   </a>
@@ -1740,22 +1779,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#spec-to-implementation-alignment" class="md-nav__link">
+  <a href="#alignment-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Spec-to-Implementation Alignment
+        Alignment Analysis
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Spec-to-Implementation Alignment">
+    <nav class="md-nav" aria-label="Alignment Analysis">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#codex-alignment" class="md-nav__link">
+  <a href="#spec-implementation-alignment-matrix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Codex Alignment
+        Spec-Implementation Alignment Matrix
       
     </span>
   </a>
@@ -1763,10 +1802,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#gemini-alignment" class="md-nav__link">
+  <a href="#alignment-score-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gemini Alignment
+        Alignment Score Summary
       
     </span>
   </a>
@@ -1774,10 +1813,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#claude-alignment" class="md-nav__link">
+  <a href="#gap-analysis-by-agent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Claude Alignment
+        Gap Analysis by Agent
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gap Analysis by Agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codex-gaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Codex Gaps
       
     </span>
   </a>
@@ -1785,10 +1836,37 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#overall-evaluation" class="md-nav__link">
+  <a href="#gemini-gaps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overall Evaluation
+        Gemini Gaps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude-gaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claude Gaps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-philosophy-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Philosophy Comparison
       
     </span>
   </a>
@@ -1801,34 +1879,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-findings-and-conclusions" class="md-nav__link">
+  <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Findings and Conclusions
+        Conclusion
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Key Findings and Conclusions">
+    <nav class="md-nav" aria-label="Conclusion">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#key-findings" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Findings
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Findings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#codex" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Codex
+        Summary
       
     </span>
   </a>
@@ -1836,10 +1902,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#gemini" class="md-nav__link">
+  <a href="#recommendations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gemini
+        Recommendations
       
     </span>
   </a>
@@ -1847,26 +1913,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#claude" class="md-nav__link">
+  <a href="#next-steps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Claude
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conclusions
+        Next Steps
       
     </span>
   </a>
@@ -1882,34 +1932,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tts-comparison/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    TTS Comparison
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -2262,10 +2284,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#llm-spec-locations" class="md-nav__link">
+  <a href="#tts-spec-locations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        LLM Spec Locations
+        TTS Spec Locations
       
     </span>
   </a>
@@ -2301,6 +2323,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#feature-support-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Support Matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#success-criteria-comparison" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2329,10 +2362,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#code-structure" class="md-nav__link">
+  <a href="#architecture-comparison" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Code Structure
+        Architecture Comparison
       
     </span>
   </a>
@@ -2340,10 +2373,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#api-endpoint-design" class="md-nav__link">
+  <a href="#code-quality-metrics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        API Endpoint Design
+        Code Quality Metrics
       
     </span>
   </a>
@@ -2351,10 +2384,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-handling-pattern" class="md-nav__link">
+  <a href="#implementation-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error Handling Pattern
+        Implementation Features
       
     </span>
   </a>
@@ -2362,10 +2395,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#chat-history-implementation" class="md-nav__link">
+  <a href="#streaming-implementation-gemini-only" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Chat History Implementation
+        Streaming Implementation (Gemini Only)
       
     </span>
   </a>
@@ -2373,10 +2406,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#test-coverage" class="md-nav__link">
+  <a href="#error-handling-comparison" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Test Coverage
+        Error Handling Comparison
       
     </span>
   </a>
@@ -2389,22 +2422,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#spec-to-implementation-alignment" class="md-nav__link">
+  <a href="#alignment-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Spec-to-Implementation Alignment
+        Alignment Analysis
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Spec-to-Implementation Alignment">
+    <nav class="md-nav" aria-label="Alignment Analysis">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#codex-alignment" class="md-nav__link">
+  <a href="#spec-implementation-alignment-matrix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Codex Alignment
+        Spec-Implementation Alignment Matrix
       
     </span>
   </a>
@@ -2412,10 +2445,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#gemini-alignment" class="md-nav__link">
+  <a href="#alignment-score-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gemini Alignment
+        Alignment Score Summary
       
     </span>
   </a>
@@ -2423,10 +2456,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#claude-alignment" class="md-nav__link">
+  <a href="#gap-analysis-by-agent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Claude Alignment
+        Gap Analysis by Agent
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gap Analysis by Agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codex-gaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Codex Gaps
       
     </span>
   </a>
@@ -2434,10 +2479,37 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#overall-evaluation" class="md-nav__link">
+  <a href="#gemini-gaps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overall Evaluation
+        Gemini Gaps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude-gaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claude Gaps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-philosophy-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Philosophy Comparison
       
     </span>
   </a>
@@ -2450,34 +2522,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-findings-and-conclusions" class="md-nav__link">
+  <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Findings and Conclusions
+        Conclusion
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Key Findings and Conclusions">
+    <nav class="md-nav" aria-label="Conclusion">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#key-findings" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Findings
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Findings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#codex" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Codex
+        Summary
       
     </span>
   </a>
@@ -2485,10 +2545,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#gemini" class="md-nav__link">
+  <a href="#recommendations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gemini
+        Recommendations
       
     </span>
   </a>
@@ -2496,26 +2556,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#claude" class="md-nav__link">
+  <a href="#next-steps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Claude
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conclusions
+        Next Steps
       
     </span>
   </a>
@@ -2547,14 +2591,14 @@
   
 
 
-<h1 id="llm-implementation-comparison">LLM Implementation Comparison</h1>
-<p>このドキュメントでは、3つのコーディングエージェント（Codex, Gemini, Claude）のLLM（Large Language Model）サービス機能について、仕様書と実装の両面から比較分析を行います。</p>
+<h1 id="tts-implementation-comparison">TTS Implementation Comparison</h1>
+<p>このドキュメントでは、3つのコーディングエージェント（Codex, Gemini, Claude）のTTS（Text-to-Speech）機能について、仕様書と実装の両面から比較分析を行います。</p>
 <div class="admonition info">
 <p class="admonition-title">前提条件</p>
 <p>この比較の実験環境、共通ワークフロー、Constitution については <a href="../comparison-baseline/">Comparison Baseline</a> を参照してください。</p>
 </div>
 <h2 id="overview">Overview</h2>
-<p>各エージェントは同じLLMサービス機能（OpenAI gpt-5-miniを使用したテキスト生成API）を実装することを求められましたが、仕様の定義方法と実装アプローチには顕著な違いがあります。この比較を通じて、各エージェントの設計思想と開発能力を客観的に評価します。</p>
+<p>各エージェントは同じ音声合成機能（Style-Bert-VITS2を使用した日本語TTS API）を実装することを求められましたが、仕様の定義方法と実装アプローチには顕著な違いがあります。この比較を通じて、各エージェントの設計思想と開発能力を客観的に評価します。</p>
 <h2 id="comparison-baseline">Comparison Baseline</h2>
 <table>
 <thead>
@@ -2568,25 +2612,25 @@
 <tbody>
 <tr>
 <td>Codex</td>
-<td><a href="https://github.com/0h-n0/local-voice-assistant-codex/commit/d77c272739e9116c9d220a46e8e14ea547ef5ea2">d77c272</a></td>
+<td><a href="https://github.com/0h-n0/local-voice-assistant-codex/commit/c40b09dfb388af7bec45a520640b7bc3f782c161">c40b09d</a></td>
 <td>local-voice-assistant-codex</td>
-<td>2025-12-26</td>
+<td>2025-12-27</td>
 </tr>
 <tr>
 <td>Gemini</td>
-<td><a href="https://github.com/0h-n0/local-voice-assistant-gemini/commit/361573e99e5a4d6f4440eb83f90845b9e56258c7">361573e</a></td>
+<td><a href="https://github.com/0h-n0/local-voice-assistant-gemini/commit/8f8d9de33be7d7a05fdf4de507aa18ee16ff5bec">8f8d9de</a></td>
 <td>local-voice-assistant-gemini</td>
-<td>2025-12-26</td>
+<td>2025-12-27</td>
 </tr>
 <tr>
 <td>Claude</td>
-<td><a href="https://github.com/0h-n0/local-voice-assistant-claude/commit/aa6d1e374d1088224811491e2430afed2bb3f7e2">aa6d1e3</a></td>
+<td><a href="https://github.com/0h-n0/local-voice-assistant-claude/commit/21bd10cbb263a11ab80203c9c33167d8e3b9534e">21bd10c</a></td>
 <td>local-voice-assistant-claude</td>
-<td>2025-12-26</td>
+<td>2025-12-27</td>
 </tr>
 </tbody>
 </table>
-<h3 id="llm-spec-locations">LLM Spec Locations</h3>
+<h3 id="tts-spec-locations">TTS Spec Locations</h3>
 <table>
 <thead>
 <tr>
@@ -2598,24 +2642,24 @@
 <tbody>
 <tr>
 <td>Codex</td>
-<td><code>specs/001-llm-service/spec.md</code></td>
-<td>001-llm-service</td>
+<td><code>specs/001-tts-api/spec.md</code></td>
+<td>001-tts-api</td>
 </tr>
 <tr>
 <td>Gemini</td>
-<td><code>specs/003-llm-service/spec.md</code></td>
-<td>003-llm-service</td>
+<td><code>specs/004-tts-japanese-api/spec.md</code></td>
+<td>004-tts-japanese-api</td>
 </tr>
 <tr>
 <td>Claude</td>
-<td><code>specs/003-llm-text-service/spec.md</code></td>
-<td>003-llm-text-service</td>
+<td><code>specs/004-tts-api/spec.md</code></td>
+<td>004-tts-api</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="specification-comparison">Specification Comparison</h2>
-<p>各エージェントが定義したLLM仕様書を比較します。機能要件（FR）と成功基準（SC）の違いを分析します。</p>
+<p>各エージェントが定義したTTS仕様書を比較します。機能要件（FR）と成功基準（SC）の違いを分析します。</p>
 <h3 id="functional-requirements-comparison">Functional Requirements Comparison</h3>
 <table>
 <thead>
@@ -2628,82 +2672,163 @@
 </thead>
 <tbody>
 <tr>
-<td>チャット/補完エンドポイント</td>
+<td>テキスト受付エンドポイント</td>
 <td>✅ FR-001</td>
 <td>✅ FR-001</td>
 <td>✅ FR-001</td>
 </tr>
 <tr>
-<td>OpenAI gpt-5-mini使用</td>
-<td>✅ FR-002</td>
-<td>✅ FR-002</td>
-<td>✅ FR-002</td>
+<td>音声フォーマット</td>
+<td>WAV (FR-007)</td>
+<td>WAV (FR-002)</td>
+<td>WAV (FR-002)</td>
 </tr>
 <tr>
-<td>ストリーミング (SSE)</td>
+<td>ストリーミング対応</td>
 <td>❌ なし</td>
-<td>✅ FR-003</td>
-<td>❌ なし</td>
-</tr>
-<tr>
-<td>チャット履歴管理</td>
-<td>❌ なし</td>
-<td>✅ FR-004</td>
 <td>✅ FR-006</td>
+<td>❌ なし</td>
 </tr>
 <tr>
-<td>パラメータ設定 (temp, max_tokens)</td>
+<td>音声スタイル選択</td>
+<td>✅ FR-002</td>
+<td>✅ FR-003, FR-004</td>
+<td>❌ 対象外</td>
+</tr>
+<tr>
+<td>話速パラメータ</td>
 <td>❌ なし</td>
 <td>✅ FR-005</td>
+<td>✅ FR-003</td>
+</tr>
+<tr>
+<td>テキスト長制限</td>
+<td>1,000文字 (FR-006)</td>
+<td>500文字 (FR-007)</td>
+<td>5,000文字 (FR-004)</td>
+</tr>
+<tr>
+<td>認証要件</td>
+<td>❌ なし</td>
+<td>✅ API Key (FR-008)</td>
 <td>❌ なし</td>
 </tr>
 <tr>
-<td>ステータスエンドポイント</td>
-<td>❌ なし</td>
+<td>ヘルスチェック</td>
+<td>✅ FR-004</td>
 <td>❌ なし</td>
 <td>✅ FR-005</td>
 </tr>
 <tr>
-<td>会話クリア機能</td>
+<td>エラーハンドリング</td>
+<td>✅ FR-003, FR-005</td>
+<td>✅ FR-007</td>
+<td>✅ FR-004</td>
+</tr>
+<tr>
+<td>ログ/メトリクス</td>
 <td>❌ なし</td>
-<td>❌ なし</td>
-<td>✅ FR-008</td>
+<td>✅ FR-009, FR-010</td>
+<td>✅ FR-006</td>
 </tr>
 <tr>
 <td>同時リクエスト制限</td>
 <td>❌ なし</td>
 <td>❌ なし</td>
-<td>✅ FR-004</td>
-</tr>
-<tr>
-<td>固定システムプロンプト</td>
-<td>❌ なし</td>
-<td>❌ なし</td>
-<td>✅ FR-003</td>
-</tr>
-<tr>
-<td>APIバージョニング</td>
-<td>❌ なし</td>
-<td>✅ v1</td>
-<td>❌ なし</td>
-</tr>
-<tr>
-<td>エラーハンドリング</td>
-<td>✅ FR-007</td>
-<td>✅ FR-007</td>
 <td>✅ FR-007</td>
 </tr>
 <tr>
 <td><strong>機能要件数</strong></td>
-<td><strong>8件</strong></td>
-<td><strong>8件</strong></td>
-<td><strong>9件</strong></td>
+<td><strong>7件</strong></td>
+<td><strong>10件</strong></td>
+<td><strong>7件</strong></td>
 </tr>
 </tbody>
 </table>
 <div class="admonition note">
-<p class="admonition-title">Claudeの特徴</p>
-<p>Claudeは3エージェント中最も多くの機能要件（9件）を定義しており、会話管理、同時リクエスト制限、ステータス監視など運用面の要件が充実しています。</p>
+<p class="admonition-title">Geminiの特徴</p>
+<p>Geminiは3エージェント中最も多くの機能要件（10件）を定義しており、ストリーミング対応、認証、Observabilityなど運用面の要件が充実しています。</p>
+</div>
+<h3 id="feature-support-matrix">Feature Support Matrix</h3>
+<table>
+<thead>
+<tr>
+<th>機能</th>
+<th>Codex</th>
+<th>Gemini</th>
+<th>Claude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本音声合成</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>音声スタイル/感情選択</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>話速調整</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>ピッチ調整</td>
+<td>❌</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>ストリーミング出力</td>
+<td>❌</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>API認証</td>
+<td>❌</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>ヘルスチェック</td>
+<td>✅</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Prometheusメトリクス</td>
+<td>❌</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>処理時間追跡</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>同時リクエスト制限</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">設計思想の違い</p>
+<ul>
+<li><strong>Codex</strong>: シンプルで即座に利用可能（認証なし、基本機能重視）</li>
+<li><strong>Gemini</strong>: 機能豊富（ストリーミング、認証、Observability）</li>
+<li><strong>Claude</strong>: 運用安定性重視（同時リクエスト制限、処理時間追跡）</li>
+</ul>
 </div>
 <h3 id="success-criteria-comparison">Success Criteria Comparison</h3>
 <table>
@@ -2717,55 +2842,63 @@
 </thead>
 <tbody>
 <tr>
-<td>レスポンスタイム目標</td>
-<td>未指定</td>
-<td>5秒 (SC-001)</td>
-<td>3秒 (SC-001)</td>
+<td>レイテンシ目標</td>
+<td>5秒/1文 (SC-002)</td>
+<td>2秒/20文字 (SC-001)</td>
+<td>10秒/100文字 (SC-001)</td>
 </tr>
 <tr>
-<td>ストリーミング開始時間</td>
+<td>成功率</td>
+<td>95% (SC-001)</td>
 <td>未指定</td>
-<td>1秒 (SC-002)</td>
 <td>未指定</td>
 </tr>
 <tr>
-<td>履歴保持ターン数</td>
+<td>同時リクエスト</td>
 <td>未指定</td>
-<td>10ターン (SC-003)</td>
-<td>5ターン (SC-002)</td>
+<td>2件 (SC-003)</td>
+<td>100件連続 (SC-003)</td>
 </tr>
 <tr>
-<td>同時リクエスト数</td>
+<td>音質基準</td>
 <td>未指定</td>
-<td>未指定</td>
-<td>5件 (SC-003)</td>
+<td>44.1kHz (SC-002)</td>
+<td>聞き取り可能 (SC-002)</td>
 </tr>
 <tr>
-<td>API可用性</td>
+<td>スタイル数</td>
 <td>未指定</td>
-<td>99.9% (SC-004)</td>
+<td>10種類 (SC-004)</td>
+<td>未指定</td>
+</tr>
+<tr>
+<td>エラー応答時間</td>
+<td>未指定</td>
+<td>未指定</td>
+<td>1秒以内 (SC-004)</td>
+</tr>
+<tr>
+<td>統合時間</td>
+<td>30分 (SC-004)</td>
+<td>未指定</td>
 <td>未指定</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition info">
-<p class="admonition-title">パフォーマンス目標の違い</p>
-<p>GeminiとClaudeはレスポンスタイム目標を明確に定義していますが、Codexは未指定です。Geminiのみがストリーミング開始時間とAPI可用性を定義しています。</p>
-</div>
 <p>詳細な分析については各エージェントのページを参照してください：</p>
 <ul>
-<li><a href="../../agents/codex/llm-analysis/">Codex LLM Analysis</a></li>
-<li><a href="../../agents/gemini/llm-analysis/">Gemini LLM Analysis</a></li>
-<li><a href="../../agents/claude/llm-analysis/">Claude LLM Analysis</a></li>
+<li><a href="../../agents/codex/tts-analysis/">Codex TTS Analysis</a></li>
+<li><a href="../../agents/gemini/tts-analysis/">Gemini TTS Analysis</a></li>
+<li><a href="../../agents/claude/tts-analysis/">Claude TTS Analysis</a></li>
 </ul>
 <hr />
 <h2 id="implementation-comparison">Implementation Comparison</h2>
-<p>各エージェントのLLM実装コードを比較します。ファイル構造、APIエンドポイント設計、エラー処理パターン、チャット履歴実装、テストカバレッジの観点から分析します。</p>
-<h3 id="code-structure">Code Structure</h3>
+<p>各エージェントが生成した実装コードを比較します。アーキテクチャ、コード品質、機能実装の違いを分析します。</p>
+<h3 id="architecture-comparison">Architecture Comparison</h3>
 <table>
 <thead>
 <tr>
-<th>項目</th>
+<th>アーキテクチャ要素</th>
 <th>Codex</th>
 <th>Gemini</th>
 <th>Claude</th>
@@ -2773,99 +2906,446 @@
 </thead>
 <tbody>
 <tr>
-<td>API実装ファイル</td>
-<td><code>backend/app/api/llm.py</code></td>
-<td><code>backend/src/api/v1/endpoints/llm.py</code></td>
-<td><code>backend/src/api/llm.py</code></td>
+<td>フレームワーク</td>
+<td>FastAPI</td>
+<td>FastAPI</td>
+<td>FastAPI</td>
 </tr>
 <tr>
-<td>サービス層</td>
-<td><code>app/services/llm_client.py</code></td>
-<td><code>src/core/llm/service.py</code></td>
-<td><code>src/services/llm_service.py</code></td>
+<td>レイヤー構造</td>
+<td>2層（API + Engine）</td>
+<td>3層（API + Synthesizer + ModelManager）</td>
+<td>3層（API + Service + Model）</td>
 </tr>
 <tr>
-<td>実装行数</td>
-<td>91行</td>
-<td>174行</td>
-<td>678行</td>
+<td>非同期処理</td>
+<td>同期処理</td>
+<td>asyncio + ThreadPoolExecutor</td>
+<td>asyncio + ThreadPoolExecutor</td>
 </tr>
 <tr>
-<td>テスト行数</td>
-<td>51行</td>
-<td>119行</td>
-<td>615行</td>
+<td>依存性注入</td>
+<td>なし</td>
+<td>FastAPI Depends</td>
+<td>FastAPI Depends</td>
 </tr>
 <tr>
-<td><strong>合計行数</strong></td>
-<td><strong>142行</strong></td>
-<td><strong>293行</strong></td>
-<td><strong>1293行</strong></td>
+<td>エラーハンドリング</td>
+<td>JSONResponse直接返却</td>
+<td>HTTPException</td>
+<td>カスタムエラーレスポンス関数</td>
+</tr>
+</tbody>
+</table>
+<h3 id="code-quality-metrics">Code Quality Metrics</h3>
+<table>
+<thead>
+<tr>
+<th>メトリクス</th>
+<th>Codex</th>
+<th>Gemini</th>
+<th>Claude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APIエンドポイントコード行数</td>
+<td>38行</td>
+<td>45行</td>
+<td>162行</td>
+</tr>
+<tr>
+<td>サービス層コード行数</td>
+<td>22行</td>
+<td>122行</td>
+<td>236行</td>
+</tr>
+<tr>
+<td>型ヒント使用</td>
+<td>部分的</td>
+<td>完全</td>
+<td>完全</td>
+</tr>
+<tr>
+<td>ドキュメント文字列</td>
+<td>なし</td>
+<td>あり</td>
+<td>あり</td>
+</tr>
+<tr>
+<td>ロギング実装</td>
+<td>なし</td>
+<td>あり（Prometheus統合）</td>
+<td>あり（構造化ログ）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="implementation-features">Implementation Features</h3>
+<table>
+<thead>
+<tr>
+<th>実装機能</th>
+<th>Codex</th>
+<th>Gemini</th>
+<th>Claude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Style-Bert-VITS2統合</td>
+<td>スタブのみ</td>
+<td>完全実装</td>
+<td>完全実装</td>
+</tr>
+<tr>
+<td>モデル読み込み</td>
+<td>なし</td>
+<td>ModelManager経由</td>
+<td>非同期load_model</td>
+</tr>
+<tr>
+<td>同時実行制御</td>
+<td>なし</td>
+<td>Semaphore(2)</td>
+<td>Semaphore(configurable)</td>
+</tr>
+<tr>
+<td>音声パラメータ</td>
+<td>voice</td>
+<td>speed, pitch, style, style_weight</td>
+<td>speed</td>
+</tr>
+<tr>
+<td>ストリーミング</td>
+<td>なし</td>
+<td>文単位分割ストリーミング</td>
+<td>なし</td>
+</tr>
+<tr>
+<td>メトリクス収集</td>
+<td>なし</td>
+<td>Prometheus Counter/Histogram</td>
+<td>X-Processing-Time ヘッダー</td>
+</tr>
+<tr>
+<td>ヘルスチェック</td>
+<td>未確認</td>
+<td>なし（仕様で未定義）</td>
+<td>/api/tts/status エンドポイント</td>
+</tr>
+</tbody>
+</table>
+<h3 id="streaming-implementation-gemini-only">Streaming Implementation (Gemini Only)</h3>
+<p>Geminiのみがストリーミング出力を実装しています：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Gemini: 文単位での分割ストリーミング</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">synthesize_stream</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">:</span> <span class="n">TTSRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AsyncGenerator</span><span class="p">[</span><span class="nb">bytes</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">sentences</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_split_sentences</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>  <span class="c1"># 。！？\n で分割</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">for</span> <span class="n">segment</span> <span class="ow">in</span> <span class="n">sentences</span><span class="p">:</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="n">sr</span><span class="p">,</span> <span class="n">pcm_data</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_infer_pcm</span><span class="p">(</span><span class="n">segment</span><span class="p">,</span> <span class="n">request</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="k">yield</span> <span class="n">pcm_data</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">ストリーミングの利点</p>
+<ul>
+<li>最初の音声チャンクが早く返却される（Time-to-First-Byte短縮）</li>
+<li>長文テキストでもユーザー体験が向上</li>
+<li>メモリ使用量の最適化</li>
+</ul>
+</div>
+<h3 id="error-handling-comparison">Error Handling Comparison</h3>
+<table>
+<thead>
+<tr>
+<th>エラー種別</th>
+<th>Codex</th>
+<th>Gemini</th>
+<th>Claude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空テキスト</td>
+<td>ValueError → 400</td>
+<td>ValueError → 400</td>
+<td>TTSErrorCode.EMPTY_TEXT → 400</td>
+</tr>
+<tr>
+<td>テキスト長超過</td>
+<td>ValueError → 400</td>
+<td>ValueError → 400</td>
+<td>TTSErrorCode.TEXT_TOO_LONG → 400</td>
+</tr>
+<tr>
+<td>未対応ボイス</td>
+<td>ValueError → 400</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>モデル未読込</td>
+<td>N/A</td>
+<td>Exception → 500</td>
+<td>TTSErrorCode.MODEL_NOT_LOADED → 503</td>
+</tr>
+<tr>
+<td>同時リクエスト超過</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>TTSErrorCode.SERVICE_BUSY → 503</td>
+</tr>
+<tr>
+<td>合成失敗</td>
+<td>ValueError → 500</td>
+<td>Exception → 500</td>
+<td>TTSErrorCode.SYNTHESIS_FAILED → 500</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition info">
-<p class="admonition-title">コード量の違い</p>
-<p>Claudeの実装はCodexの約9倍、Geminiの約4.4倍のコード量があります。これはチャット履歴管理、詳細なエラーハンドリング、包括的なテストコードが含まれているためです。</p>
+<p class="admonition-title">Claude のエラーハンドリング</p>
+<p>Claude は最も詳細なエラーコード体系を実装しており、クライアントがエラーの種類を識別しやすい設計になっています。また、503 ステータスコードを適切に使用してサービス一時不可状態を表現しています。</p>
 </div>
-<h3 id="api-endpoint-design">API Endpoint Design</h3>
+<p>詳細な実装分析については各エージェントのページを参照してください：</p>
+<ul>
+<li><a href="../../agents/codex/tts-analysis/">Codex TTS Analysis</a></li>
+<li><a href="../../agents/gemini/tts-analysis/">Gemini TTS Analysis</a></li>
+<li><a href="../../agents/claude/tts-analysis/">Claude TTS Analysis</a></li>
+</ul>
+<hr />
+<h2 id="alignment-analysis">Alignment Analysis</h2>
+<p>各エージェントの仕様書と実装の整合性を分析します。</p>
+<h3 id="spec-implementation-alignment-matrix">Spec-Implementation Alignment Matrix</h3>
 <table>
 <thead>
 <tr>
-<th>項目</th>
-<th>Codex</th>
-<th>Gemini</th>
-<th>Claude</th>
+<th>仕様要件</th>
+<th>Codex Spec</th>
+<th>Codex Impl</th>
+<th>Gemini Spec</th>
+<th>Gemini Impl</th>
+<th>Claude Spec</th>
+<th>Claude Impl</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>チャットパス</td>
-<td><code>POST /llm/complete</code></td>
-<td><code>POST /api/v1/llm/chat</code></td>
-<td><code>POST /api/llm/chat</code></td>
+<td>日本語テキスト受付</td>
+<td>✅</td>
+<td>⚠️ スタブ</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
 </tr>
 <tr>
-<td>ストリーミングパス</td>
-<td>❌ なし</td>
-<td><code>POST /api/v1/llm/chat</code> (SSE)</td>
-<td>❌ なし</td>
+<td>WAV形式出力</td>
+<td>✅</td>
+<td>⚠️ ヘッダのみ</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
 </tr>
 <tr>
-<td>ステータスパス</td>
-<td>❌ なし</td>
-<td>❌ なし</td>
-<td><code>GET /api/llm/status</code></td>
+<td>音声スタイル選択</td>
+<td>✅</td>
+<td>⚠️ 検証のみ</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
 </tr>
 <tr>
-<td>会話クリアパス</td>
-<td>❌ なし</td>
-<td>❌ なし</td>
-<td><code>DELETE /api/llm/conversation/{id}</code></td>
+<td>話速パラメータ</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
 </tr>
 <tr>
-<td>APIプレフィックス</td>
-<td>なし</td>
-<td><code>/api/v1</code></td>
-<td><code>/api/llm</code></td>
+<td>テキスト長制限</td>
+<td>✅ (1000)</td>
+<td>✅</td>
+<td>✅ (500)</td>
+<td>✅</td>
+<td>✅ (5000)</td>
+<td>✅</td>
 </tr>
 <tr>
-<td>バージョニング</td>
-<td>❌ なし</td>
-<td>✅ v1</td>
-<td>❌ なし</td>
+<td>ヘルスチェック</td>
+<td>✅</td>
+<td>⚠️ 未確認</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>ストリーミング</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>API認証</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Prometheusメトリクス</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>同時リクエスト制限</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Alignment Legend</p>
+<ul>
+<li>✅ 仕様通り実装済み / 仕様と実装が一致</li>
+<li>⚠️ 部分的実装 / 仕様を満たしていない</li>
+<li>❌ 仕様なし / 未実装</li>
+</ul>
+</div>
+<h3 id="alignment-score-summary">Alignment Score Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>仕様定義</th>
+<th>実装完了</th>
+<th>整合率</th>
+<th>追加実装</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Codex</td>
+<td>7件</td>
+<td>2件</td>
+<td>29%</td>
+<td>0件</td>
+</tr>
+<tr>
+<td>Gemini</td>
+<td>10件</td>
+<td>9件</td>
+<td>90%</td>
+<td>1件 (同時制限)</td>
+</tr>
+<tr>
+<td>Claude</td>
+<td>7件</td>
+<td>7件</td>
+<td>100%</td>
+<td>0件</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition note">
-<p class="admonition-title">APIバージョニング</p>
-<p>Geminiのみが明示的なAPIバージョニング（/api/v1）を採用しています。Claudeはステータスエンドポイントと会話クリア機能を提供しています。</p>
+<p class="admonition-title">整合率の解釈</p>
+<ul>
+<li><strong>Codex (29%)</strong>: スタブ実装のため、仕様の大部分が未実現</li>
+<li><strong>Gemini (90%)</strong>: ヘルスチェック以外は完全実装、仕様外の同時制限も追加</li>
+<li><strong>Claude (100%)</strong>: 仕様通りの完全実装</li>
+</ul>
 </div>
-<h3 id="error-handling-pattern">Error Handling Pattern</h3>
+<h3 id="gap-analysis-by-agent">Gap Analysis by Agent</h3>
+<h4 id="codex-gaps">Codex Gaps</h4>
 <table>
 <thead>
 <tr>
-<th>項目</th>
+<th>Gap</th>
+<th>仕様</th>
+<th>実装状況</th>
+<th>影響</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Style-Bert-VITS2統合</td>
+<td>FR-001</td>
+<td>スタブのみ</td>
+<td>致命的</td>
+</tr>
+<tr>
+<td>実際の音声生成</td>
+<td>FR-007</td>
+<td>b"RIFF"のみ</td>
+<td>致命的</td>
+</tr>
+<tr>
+<td>ヘルスチェック</td>
+<td>FR-004</td>
+<td>未確認</td>
+<td>中程度</td>
+</tr>
+</tbody>
+</table>
+<h4 id="gemini-gaps">Gemini Gaps</h4>
+<table>
+<thead>
+<tr>
+<th>Gap</th>
+<th>仕様</th>
+<th>実装状況</th>
+<th>影響</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ヘルスチェック</td>
+<td>仕様なし</td>
+<td>未実装</td>
+<td>低（仕様で未定義）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="claude-gaps">Claude Gaps</h4>
+<table>
+<thead>
+<tr>
+<th>Gap</th>
+<th>仕様</th>
+<th>実装状況</th>
+<th>影響</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>なし</td>
+<td>-</td>
+<td>完全実装</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="design-philosophy-comparison">Design Philosophy Comparison</h3>
+<table>
+<thead>
+<tr>
+<th>観点</th>
 <th>Codex</th>
 <th>Gemini</th>
 <th>Claude</th>
@@ -2873,409 +3353,104 @@
 </thead>
 <tbody>
 <tr>
-<td>エラーレスポンス形式</td>
-<td><code>HTTPException</code></td>
-<td><code>HTTPException(status_code, detail)</code></td>
-<td><code>ErrorResponse(error_code, message, details)</code></td>
+<td>仕様の詳細度</td>
+<td>基本的</td>
+<td>包括的</td>
+<td>バランス型</td>
 </tr>
 <tr>
-<td>エラーコード定義</td>
-<td>HTTP status のみ</td>
-<td>HTTP status + detail</td>
-<td>Enum (<code>ErrorCode</code>)</td>
+<td>実装の完成度</td>
+<td>プロトタイプ</td>
+<td>本番レベル</td>
+<td>本番レベル</td>
 </tr>
 <tr>
-<td>詳細情報</td>
-<td>❌ なし</td>
-<td>文字列のみ</td>
-<td>✅ details オブジェクト</td>
+<td>拡張性設計</td>
+<td>低</td>
+<td>高</td>
+<td>中</td>
 </tr>
 <tr>
-<td>ログ出力</td>
-<td>❌ なし</td>
-<td>❌ 未確認</td>
-<td>✅ 構造化ログ</td>
+<td>運用考慮</td>
+<td>低</td>
+<td>高</td>
+<td>高</td>
+</tr>
+<tr>
+<td>Out of Scope 明記</td>
+<td>なし</td>
+<td>部分的</td>
+<td>明確</td>
 </tr>
 </tbody>
 </table>
-<h3 id="chat-history-implementation">Chat History Implementation</h3>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>Codex</th>
-<th>Gemini</th>
-<th>Claude</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>履歴管理</td>
-<td>❌ なし</td>
-<td>✅ メッセージリスト</td>
-<td>✅ インメモリキャッシュ</td>
-</tr>
-<tr>
-<td>永続化</td>
-<td>❌ なし</td>
-<td>❌ なし</td>
-<td>❌ なし (TTL)</td>
-</tr>
-<tr>
-<td>ターン制限</td>
-<td>N/A</td>
-<td>10ターン</td>
-<td>5ターン (TTL: 30分)</td>
-</tr>
-<tr>
-<td>会話ID</td>
-<td>❌ なし</td>
-<td>✅ あり</td>
-<td>✅ あり</td>
-</tr>
-<tr>
-<td>クリア機能</td>
-<td>❌ なし</td>
-<td>❌ なし</td>
-<td>✅ あり</td>
-</tr>
-</tbody>
-</table>
-<h3 id="test-coverage">Test Coverage</h3>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>Codex</th>
-<th>Gemini</th>
-<th>Claude</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>テストファイル数</td>
-<td>1</td>
-<td>2</td>
-<td>4</td>
-</tr>
-<tr>
-<td>テストケース概算</td>
-<td>3-5件</td>
-<td>6-8件</td>
-<td>15-20件</td>
-</tr>
-<tr>
-<td>テストタイプ</td>
-<td>基本的な統合テスト</td>
-<td>モック + 統合テスト</td>
-<td>コントラクト + ユニットテスト</td>
-</tr>
-<tr>
-<td>ストリーミングテスト</td>
-<td>N/A</td>
-<td>✅</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>エラーハンドリングテスト</td>
-<td>⚠️ 部分的</td>
-<td>✅</td>
-<td>✅ 詳細</td>
-</tr>
-<tr>
-<td>履歴管理テスト</td>
-<td>N/A</td>
-<td>✅</td>
-<td>✅ 詳細</td>
-</tr>
-</tbody>
-</table>
+<div class="admonition info">
+<p class="admonition-title">設計思想の特徴</p>
+<ul>
+<li><strong>Codex</strong>: 迅速なプロトタイピング重視。仕様は簡潔だが実装は最小限</li>
+<li><strong>Gemini</strong>: 機能豊富で運用重視。ストリーミング、認証、メトリクスを標準装備</li>
+<li><strong>Claude</strong>: 仕様と実装の一貫性重視。Out of Scope を明確に定義し、定義した機能は完全実装</li>
+</ul>
+</div>
+<p>詳細な整合性分析については各エージェントのページを参照してください：</p>
+<ul>
+<li><a href="../../agents/codex/tts-analysis/">Codex TTS Analysis</a></li>
+<li><a href="../../agents/gemini/tts-analysis/">Gemini TTS Analysis</a></li>
+<li><a href="../../agents/claude/tts-analysis/">Claude TTS Analysis</a></li>
+</ul>
 <hr />
-<h2 id="spec-to-implementation-alignment">Spec-to-Implementation Alignment</h2>
-<p>各エージェントが仕様書で定義した要件をどの程度忠実に実装しているかを評価します。</p>
-<h3 id="codex-alignment">Codex Alignment</h3>
+<h2 id="conclusion">Conclusion</h2>
+<h3 id="summary">Summary</h3>
+<p>3つのエージェントによるTTS API実装を比較した結果、以下の特徴が明らかになりました：</p>
 <table>
 <thead>
 <tr>
-<th>FR</th>
-<th>要件</th>
-<th>実装状況</th>
-<th>エビデンス</th>
+<th>評価軸</th>
+<th>最優秀</th>
+<th>理由</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>FR-001</td>
-<td>チャット補完エンドポイント</td>
-<td>✅ 実装済み</td>
-<td><code>complete()</code> 関数</td>
+<td>仕様の包括性</td>
+<td>Gemini</td>
+<td>10件の機能要件、ストリーミング・認証・Observability対応</td>
 </tr>
 <tr>
-<td>FR-002</td>
-<td>OpenAI gpt-5-mini使用</td>
-<td>✅ 実装済み</td>
-<td><code>llm_client.py</code> でモデル指定</td>
+<td>実装の完成度</td>
+<td>Claude / Gemini</td>
+<td>Style-Bert-VITS2完全統合、本番運用可能な品質</td>
 </tr>
 <tr>
-<td>FR-003</td>
-<td>プロンプト受け取り</td>
-<td>✅ 実装済み</td>
-<td>リクエストボディ</td>
+<td>仕様・実装整合性</td>
+<td>Claude</td>
+<td>100%整合率、Out of Scope明確化</td>
 </tr>
 <tr>
-<td>FR-004</td>
-<td>テキスト応答返却</td>
-<td>✅ 実装済み</td>
-<td>レスポンスモデル</td>
+<td>運用考慮</td>
+<td>Gemini</td>
+<td>Prometheusメトリクス、API認証、ストリーミング</td>
 </tr>
 <tr>
-<td>FR-005</td>
-<td>環境変数からAPIキー</td>
-<td>✅ 実装済み</td>
-<td><code>OPENAI_API_KEY</code></td>
-</tr>
-<tr>
-<td>FR-006</td>
-<td>タイムアウト処理</td>
-<td>⚠️ 部分的</td>
-<td>デフォルト設定のみ</td>
-</tr>
-<tr>
-<td>FR-007</td>
-<td>エラーハンドリング</td>
-<td>✅ 実装済み</td>
-<td>HTTPException</td>
-</tr>
-<tr>
-<td>FR-008</td>
-<td>JSON形式応答</td>
-<td>✅ 実装済み</td>
-<td>FastAPI自動変換</td>
+<td>シンプルさ</td>
+<td>Codex</td>
+<td>60行程度の最小実装</td>
 </tr>
 </tbody>
 </table>
-<p><strong>達成率</strong>: 7/8 (88%) + 1部分的</p>
-<h3 id="gemini-alignment">Gemini Alignment</h3>
-<table>
-<thead>
-<tr>
-<th>FR</th>
-<th>要件</th>
-<th>実装状況</th>
-<th>エビデンス</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>FR-001</td>
-<td>チャットエンドポイント</td>
-<td>✅ 実装済み</td>
-<td><code>chat()</code> 関数</td>
-</tr>
-<tr>
-<td>FR-002</td>
-<td>OpenAI gpt-5-mini使用</td>
-<td>✅ 実装済み</td>
-<td><code>service.py</code> でモデル指定</td>
-</tr>
-<tr>
-<td>FR-003</td>
-<td>SSEストリーミング</td>
-<td>✅ 実装済み</td>
-<td><code>StreamingResponse</code></td>
-</tr>
-<tr>
-<td>FR-004</td>
-<td>チャット履歴管理</td>
-<td>✅ 実装済み</td>
-<td>メッセージリスト管理</td>
-</tr>
-<tr>
-<td>FR-005</td>
-<td>パラメータ設定</td>
-<td>✅ 実装済み</td>
-<td>temperature, max_tokens</td>
-</tr>
-<tr>
-<td>FR-006</td>
-<td>エラーハンドリング</td>
-<td>✅ 実装済み</td>
-<td>HTTPException + 詳細</td>
-</tr>
-<tr>
-<td>FR-007</td>
-<td>JSON応答</td>
-<td>✅ 実装済み</td>
-<td>レスポンスモデル</td>
-</tr>
-<tr>
-<td>FR-008</td>
-<td>APIバージョニング</td>
-<td>✅ 実装済み</td>
-<td><code>/api/v1</code> プレフィックス</td>
-</tr>
-</tbody>
-</table>
-<p><strong>達成率</strong>: 8/8 (100%)</p>
-<h3 id="claude-alignment">Claude Alignment</h3>
-<table>
-<thead>
-<tr>
-<th>FR</th>
-<th>要件</th>
-<th>実装状況</th>
-<th>エビデンス</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>FR-001</td>
-<td>チャットエンドポイント</td>
-<td>✅ 実装済み</td>
-<td><code>chat()</code> 関数</td>
-</tr>
-<tr>
-<td>FR-002</td>
-<td>OpenAI gpt-5-mini使用</td>
-<td>✅ 実装済み</td>
-<td><code>llm_service.py</code> でモデル指定</td>
-</tr>
-<tr>
-<td>FR-003</td>
-<td>固定システムプロンプト</td>
-<td>✅ 実装済み</td>
-<td><code>SYSTEM_PROMPT</code> 定数</td>
-</tr>
-<tr>
-<td>FR-004</td>
-<td>同時リクエスト制限</td>
-<td>✅ 実装済み</td>
-<td>セマフォ実装</td>
-</tr>
-<tr>
-<td>FR-005</td>
-<td>ステータスエンドポイント</td>
-<td>✅ 実装済み</td>
-<td><code>get_status()</code> 関数</td>
-</tr>
-<tr>
-<td>FR-006</td>
-<td>チャット履歴管理</td>
-<td>✅ 実装済み</td>
-<td>TTLキャッシュ</td>
-</tr>
-<tr>
-<td>FR-007</td>
-<td>エラーハンドリング</td>
-<td>✅ 実装済み</td>
-<td>ErrorResponse + ErrorCode</td>
-</tr>
-<tr>
-<td>FR-008</td>
-<td>会話クリア機能</td>
-<td>✅ 実装済み</td>
-<td>DELETE エンドポイント</td>
-</tr>
-<tr>
-<td>FR-009</td>
-<td>JSON形式応答</td>
-<td>✅ 実装済み</td>
-<td>レスポンスモデル</td>
-</tr>
-</tbody>
-</table>
-<p><strong>達成率</strong>: 9/9 (100%)</p>
-<h3 id="overall-evaluation">Overall Evaluation</h3>
-<table>
-<thead>
-<tr>
-<th>カテゴリ</th>
-<th>Codex</th>
-<th>Gemini</th>
-<th>Claude</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>コード量</td>
-<td>142行 (最小)</td>
-<td>293行 (中間)</td>
-<td>1293行 (最大)</td>
-</tr>
-<tr>
-<td>テスト充実度</td>
-<td>可</td>
-<td>良</td>
-<td>優</td>
-</tr>
-<tr>
-<td>エラー処理</td>
-<td>可</td>
-<td>良</td>
-<td>優</td>
-</tr>
-<tr>
-<td>API設計</td>
-<td>可</td>
-<td>良</td>
-<td>優</td>
-</tr>
-<tr>
-<td>仕様遵守度</td>
-<td>88%</td>
-<td>100%</td>
-<td>100%</td>
-</tr>
-<tr>
-<td><strong>総合評価</strong></td>
-<td><strong>可</strong></td>
-<td><strong>良</strong></td>
-<td><strong>優</strong></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="key-findings-and-conclusions">Key Findings and Conclusions</h2>
-<h3 id="key-findings">Key Findings</h3>
-<h4 id="codex">Codex</h4>
-<ul>
-<li>最もシンプルで軽量な実装（142行）</li>
-<li>基本的なチャット機能のみ実装</li>
-<li>ストリーミングとチャット履歴は未対応</li>
-<li>迅速なプロトタイピングに適した設計</li>
-</ul>
-<h4 id="gemini">Gemini</h4>
-<ul>
-<li>SSEストリーミングを完全実装</li>
-<li>チャット履歴管理とパラメータ設定をサポート</li>
-<li>APIバージョニング（v1）を採用</li>
-<li>運用機能とユーザビリティを重視した設計</li>
-</ul>
-<h4 id="claude">Claude</h4>
-<ul>
-<li>最も包括的な実装（1293行、コード量9倍以上）</li>
-<li>構造化ログと詳細なエラーハンドリング</li>
-<li>ステータスAPIでサービス状態を監視可能</li>
-<li>同時リクエスト制限で安定性を確保</li>
-<li>会話クリア機能でメモリ管理をサポート</li>
-<li>品質と保守性を重視した設計</li>
-</ul>
-<h3 id="conclusions">Conclusions</h3>
+<h3 id="recommendations">Recommendations</h3>
 <ol>
-<li><strong>実装品質</strong>: Claude &gt; Gemini &gt; Codex</li>
-<li><strong>仕様遵守度</strong>: Gemini (100%) = Claude (100%) &gt; Codex (88%)</li>
-<li><strong>機能充実度</strong>: Claude (会話管理+監視) &gt; Gemini (ストリーミング+パラメータ) &gt; Codex (基本機能)</li>
-<li><strong>テスト充実度</strong>: Claude &gt; Gemini &gt; Codex</li>
+<li><strong>本番運用を目指す場合</strong>: Gemini または Claude の実装を参考に</li>
+<li><strong>プロトタイピングの場合</strong>: Codex のシンプルな構造を参考に</li>
+<li><strong>仕様書作成の参考</strong>: Claude の Out of Scope 明記と Gemini の詳細な機能要件定義</li>
 </ol>
-<p>各エージェントは異なるアプローチで実装しており：</p>
+<h3 id="next-steps">Next Steps</h3>
 <ul>
-<li><strong>Codex</strong>: 最小限の実装で素早くデリバリー</li>
-<li><strong>Gemini</strong>: ストリーミングと柔軟なパラメータ設定を重視</li>
-<li><strong>Claude</strong>: 品質、監視機能、保守性を重視した堅牢な設計</li>
+<li>STT (Speech-to-Text) 機能との統合分析</li>
+<li>LLM サービスとの連携評価</li>
+<li>エンドツーエンドの音声アシスタントワークフロー検証</li>
 </ul>
 <hr />
-<p><em>Comparison Date: 2025-12-26</em>
-<em>Feature ID: 004-llm-implementation-comparison</em></p>
 
 
 
